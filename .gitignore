@@ -1,0 +1,20 @@
+# Originals — already converted to WebP
+work/**/*.jpg
+work/**/*.jpeg
+work/**/*.png
+work/**/*.avif
+work/**/*.gif
+
+# Large local video (served from Cloudinary)
+hero/
+*.mp4
+*.mov
+*.webm
+
+# Dev files
+download-images.sh
+portfolio-baldomero-new3d.html
+
+# OS
+.DS_Store
+Thumbs.db
