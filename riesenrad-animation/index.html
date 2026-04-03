@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baldo Perdomo Garcia - Creative Wheel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Minimal stars container -->
+  <div id="stars"></div>
+
+  <div class="svg-container">
+    <svg width="100%" height="100%" viewBox="-150 0 950 800" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <path id="textPath-outer" d="M 400 90 A 250 250 0 1 1 399.99 90" />
+        <path id="textPath-inner" d="M 400 104 A 236 236 0 1 1 399.99 104" />
+      </defs>
+
+      <text x="-80" y="75" class="txt">BALDO PERDOMO GARCIA · CREATIVE WHEEL</text>
+      <text x="-80" y="92" class="smalltxt">ROTATING PROFILE · VISUAL EXPERIENCE</text>
+
+      <g id="wheel-technical">
+        <text class="circular-text">
+          <textPath href="#textPath-outer" startOffset="0" textLength="1570" lengthAdjust="spacingAndGlyphs">
+            BALDO PERDOMO GARCIA · 3D DESIGN · MOTION · BRANDING · VISUAL STORYTELLING · BLENDER · AI TOOLS · PRODUCT VISUALIZATION · BALDO PERDOMO GARCIA · 3D DESIGN · MOTION · BRANDING · VISUAL STORYTELLING · BLENDER · AI TOOLS · PRODUCT VISUALIZATION ·
+          </textPath>
+        </text>
+        
+        <text class="circular-text" style="font-size: 17px;">
+          <textPath href="#textPath-inner" startOffset="50" textLength="1480" lengthAdjust="spacingAndGlyphs">
+            CREATIVE DIRECTION · 3D ANIMATION · VISUAL DESIGN · CONCEPT DEVELOPMENT · DIGITAL STORYTELLING · BRAND EXPERIENCE · CREATIVE DIRECTION · 3D ANIMATION · VISUAL DESIGN · CONCEPT DEVELOPMENT · DIGITAL STORYTELLING · BRAND EXPERIENCE · 
+          </textPath>
+        </text>
+
+        <!-- Keep the inner small circles -->
+        <circle cx="400" cy="340" r="18" class="bold"></circle>
+        <circle cx="400" cy="340" r="8" fill="#000000"></circle>
+
+        <!-- Adjusted left bounds of structural wheel so wheel stays centered -->
+        <line x1="400" y1="70" x2="400" y2="610" class="guide"></line>
+        <line x1="80" y1="340" x2="670" y2="340" class="guide"></line>
+
+        <!-- spokes -->
+        <g id="spokes">
+          <g transform="rotate(0 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="mid"></line></g>
+          <g transform="rotate(24 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(48 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(72 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(96 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(120 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(144 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(168 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(192 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(216 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(240 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(264 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(288 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(312 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+          <g transform="rotate(336 400 340)"><line x1="400" y1="340" x2="400" y2="90" class="thin"></line></g>
+        </g>
+
+        <!-- outer rim braces -->
+        <g id="rim-bracing">
+          <circle cx="400" cy="340" r="250" class="thin"></circle>
+          <circle cx="400" cy="340" r="236" class="thin"></circle>
+        </g>
+
+        <!-- cabins: 15 evenly spaced, always horizontal -->
+        <g id="cabins">
+          <!-- Width enlarged from 38x20 to 66x32. Translate centered dynamically at (-33 -16) offset from orbit anchor (400, 50) -->
+          <g class="cabin-group" data-angle="0"><g transform="rotate(0 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(0) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">BLENDER</text></g></g></g>
+          <g class="cabin-group" data-angle="24"><g transform="rotate(24 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-24) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">3D</text></g></g></g>
+          <g class="cabin-group" data-angle="48"><g transform="rotate(48 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-48) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">MOTION</text></g></g></g>
+          <g class="cabin-group" data-angle="72"><g transform="rotate(72 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-72) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">BRANDING</text></g></g></g>
+          <g class="cabin-group" data-angle="96"><g transform="rotate(96 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-96) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">AI</text></g></g></g>
+          <g class="cabin-group" data-angle="120"><g transform="rotate(120 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-120) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">STORY</text></g></g></g>
+          <g class="cabin-group" data-angle="144"><g transform="rotate(144 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-144) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">DESIGN</text></g></g></g>
+          <g class="cabin-group" data-angle="168"><g transform="rotate(168 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-168) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">VISUAL</text></g></g></g>
+          <g class="cabin-group" data-angle="192"><g transform="rotate(192 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-192) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">PHOTO</text></g></g></g>
+          <g class="cabin-group" data-angle="216"><g transform="rotate(216 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-216) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">CONCEPT</text></g></g></g>
+          <g class="cabin-group" data-angle="240"><g transform="rotate(240 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-240) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">TOOLS</text></g></g></g>
+          <g class="cabin-group" data-angle="264"><g transform="rotate(264 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-264) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">FORM</text></g></g></g>
+          <g class="cabin-group" data-angle="288"><g transform="rotate(288 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-288) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">LIGHT</text></g></g></g>
+          <g class="cabin-group" data-angle="312"><g transform="rotate(312 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-312) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">SPACE</text></g></g></g>
+          <g class="cabin-group" data-angle="336"><g transform="rotate(336 400 340)"><g class="cabin-counter" transform="translate(400 50) rotate(-336) translate(-33 -16)"><rect width="66" height="32" class="cabin" rx="3"></rect><text x="33" y="20.5" class="cabin-txt">IDEAS</text></g></g></g>
+        </g>
+      </g>
+
+      <g id="support-technical">
+        <line x1="380" y1="358" x2="270" y2="685" class="bold"></line>
+        <line x1="420" y1="358" x2="530" y2="685" class="bold"></line>
+
+        <line x1="388" y1="360" x2="322" y2="685" class="mid"></line>
+        <line x1="412" y1="360" x2="478" y2="685" class="mid"></line>
+
+        <line x1="338" y1="538" x2="462" y2="538" class="mid"></line>
+        <line x1="354" y1="485" x2="446" y2="485" class="thin"></line>
+        <line x1="338" y1="538" x2="384" y2="360" class="thin"></line>
+        <line x1="462" y1="538" x2="416" y2="360" class="thin"></line>
+
+        <rect x="248" y="685" width="50" height="8" fill="#000000"></rect>
+        <rect x="502" y="685" width="50" height="8" fill="#000000"></rect>
+
+        <line x1="190" y1="693" x2="610" y2="693" class="bold"></line>
+      </g>
+
+      <g id="dimensions">
+        <line x1="700" y1="90" x2="700" y2="693" class="guide"></line>
+        <line x1="682" y1="90" x2="718" y2="90" class="thin"></line>
+        <line x1="682" y1="693" x2="718" y2="693" class="thin"></line>
+        <text x="708" y="394" class="smalltxt" transform="rotate(90 708 394)">CREATIVE RANGE</text>
+
+        <line x1="150" y1="645" x2="650" y2="645" class="guide"></line>
+        <line x1="150" y1="630" x2="150" y2="660" class="thin"></line>
+        <line x1="650" y1="630" x2="650" y2="660" class="thin"></line>
+        <text x="352" y="638" class="smalltxt">VISUAL LANGUAGE</text>
+
+        <line x1="390" y1="340" x2="410" y2="340" class="thin"></line>
+        <line x1="400" y1="330" x2="400" y2="350" class="thin"></line>
+        <text x="417" y="333" class="smalltxt">CORE IDEA</text>
+      </g>
+
+      <g id="notes">
+        <rect x="-80" y="635" width="180" height="85" class="thin"></rect>
+        <text x="-68" y="655" class="smalltxt">PROFILE NOTES</text>
+        <text x="-68" y="675" class="smalltxt">· BASED IN VIENNA</text>
+        <text x="-68" y="691" class="smalltxt">· SPECIALIZED IN 3D &amp; MOTION</text>
+        <text x="-68" y="707" class="smalltxt">· BUILDING VISUAL EXPERIENCES</text>
+      </g>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
