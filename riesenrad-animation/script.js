@@ -1,24 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Generate Stars
+  // 1. Generate Stars (only if #stars container exists — not used in portfolio)
   const container = document.getElementById("stars");
-  const starCount = 50; // VERY small number of white stars (minimal)
-  for (let i = 0; i < starCount; i++) {
-    const star = document.createElement("div");
-    star.className = "star";
-    
-    // Randomize position
-    const x = Math.random() * 100;
-    const y = Math.random() * 100;
-    
-    // Randomize radius between 1px and 2px
-    const size = Math.random() * 1 + 1;
-    
-    star.style.left = `${x}vw`;
-    star.style.top = `${y}vh`;
-    star.style.width = `${size}px`;
-    star.style.height = `${size}px`;
-    
-    container.appendChild(star);
+  if (container) {
+    const starCount = 50;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement("div");
+      star.className = "star";
+      const x = Math.random() * 100;
+      const y = Math.random() * 100;
+      const size = Math.random() * 1 + 1;
+      star.style.left = `${x}vw`;
+      star.style.top = `${y}vh`;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      container.appendChild(star);
+    }
   }
 
   // 2. Loop Wheel Animation via requestAnimationFrame
