@@ -1223,6 +1223,66 @@ footer{
 .w-film-card figcaption p{font-size:.9rem;line-height:1.5;color:var(--smoke);margin:0}
 
 
+
+.wx-cards{display:flex;flex-direction:column;gap:.6rem;margin:-1rem 0 3rem}
+.wx-card{position:relative}
+.wx-link{position:absolute;inset:0;z-index:2;border-radius:14px}
+.wx-thumb{
+  position:relative;z-index:3;flex-shrink:0;
+  width:108px;aspect-ratio:16/9;padding:0;
+  border:none;border-radius:8px;overflow:hidden;background:#0b0b0b;
+  cursor:pointer;display:block;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease);
+}
+.wx-thumb:hover{transform:scale(1.04);box-shadow:0 6px 18px rgba(17,17,17,.16)}
+.wx-thumb video{width:100%;height:100%;object-fit:cover;display:block}
+.wx-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:rgba(11,11,11,.28);color:#fff;
+  opacity:0;transition:opacity .25s var(--ease);
+}
+.wx-play svg{width:16px;height:16px;display:block}
+.wx-thumb:hover .wx-play,.wx-thumb:focus-visible .wx-play{opacity:1}
+@media(hover:none){.wx-play{opacity:1;background:rgba(11,11,11,.2)}}
+@media(max-width:560px){.wx-thumb{width:88px}}
+
+/* repost link card */
+.wx-card{
+  display:flex;align-items:center;gap:1rem;
+  max-width:33rem;margin:0;
+  padding:.95rem 1.15rem;
+  background:#fff;border:1px solid var(--rim);border-radius:14px;
+  text-decoration:none;color:inherit;
+  transition:border-color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease);
+}
+.wx-card:hover{
+  border-color:rgba(17,17,17,.22);transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(17,17,17,.07);
+}
+.wx-avatar{width:42px;height:42px;border-radius:12px;flex-shrink:0;display:block}
+.wx-body{flex:1;min-width:0}
+.wx-top{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;margin-bottom:.2rem}
+.wx-name{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--paper);letter-spacing:0}
+.wx-handle{font-family:var(--mono);font-size:11.5px;color:var(--smoke);letter-spacing:0}
+.wx-follows{
+  font-family:var(--mono);font-size:9px;letter-spacing:.06em;
+  color:var(--smoke);background:var(--surface);
+  border-radius:4px;padding:2px 6px;
+}
+.wx-msg{
+  display:block;font-family:var(--serif);font-size:.95rem;
+  color:rgba(17,17,17,.62);line-height:1.4;
+}
+.wx-go{
+  font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--smoke);white-space:nowrap;flex-shrink:0;align-self:center;
+}
+.wx-card:hover .wx-go{color:var(--paper)}
+@media(max-width:560px){
+  .wx-card{flex-wrap:wrap;gap:.75rem}
+  .wx-go{width:100%;text-align:right}
+}
+
 /* expand-to-window control */
 .w-expand{
   position:absolute;top:.7rem;right:.7rem;z-index:5;
@@ -1565,7 +1625,51 @@ footer{
       </ul>
     </div>
 
-    <p class="w-credit rv d2">Independent creative series &middot; published on X &middot; reposted by <a href="https://x.com/world_xyz" target="_blank" rel="noopener">@world_xyz</a></p>
+    <div class="wx-cards">
+      <div class="wx-card rv d2">
+      <a class="wx-link" href="https://x.com/world_xyz/status/2091919848997560741" target="_blank" rel="noopener"
+         aria-label="View the post by world on X that features my film"></a>
+      <img class="wx-avatar" src="world/world-symbol.svg" alt="" loading="lazy">
+      <div class="wx-body">
+        <div class="wx-top">
+          <span class="wx-name">world</span>
+          <span class="wx-handle">@world_xyz</span>
+          <span class="wx-follows">Follows you</span>
+        </div>
+        <span class="wx-msg">9.9.26, the countdown film</span>
+      </div>
+      <button class="wx-thumb" type="button" aria-label="Play the film in a larger window">
+        <video src="https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787596243/world-mono-film_vcropw.mp4" poster="https://res.cloudinary.com/dsaf6aolb/video/upload/so_13,w_1280,f_jpg,q_auto/v1787596243/world-mono-film_vcropw.jpg"
+               muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+        <span class="wx-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 9V4h5v2H6v3H4zm11-5h5v5h-2V6h-3V4zM6 15v3h3v2H4v-5h2zm12 3v-3h2v5h-5v-2h3z"/></svg>
+        </span>
+      </button>
+      <span class="wx-go">View post &#8599;</span>
+      </div>
+
+      <div class="wx-card rv d3">
+        <a class="wx-link" href="https://x.com/world_xyz/status/2088609252390625292" target="_blank" rel="noopener"
+           aria-label="View the Trade Everything post by world on X"></a>
+        <img class="wx-avatar" src="world/world-symbol.svg" alt="" loading="lazy">
+        <div class="wx-body">
+          <div class="wx-top">
+            <span class="wx-name">world</span>
+            <span class="wx-handle">@world_xyz</span>
+            <span class="wx-follows">Follows you</span>
+          </div>
+          <span class="wx-msg">Trade Everything, the launch film</span>
+        </div>
+        <button class="wx-thumb" type="button" aria-label="Play Trade Everything in a larger window">
+          <video src="https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787576281/TradeRealWorld2_hcount.mp4" poster="https://res.cloudinary.com/dsaf6aolb/video/upload/so_6,w_1280,f_jpg,q_auto/v1787576281/TradeRealWorld2_hcount.jpg"
+                 muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+          <span class="wx-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 9V4h5v2H6v3H4zm11-5h5v5h-2V6h-3V4zM6 15v3h3v2H4v-5h2zm12 3v-3h2v5h-5v-2h3z"/></svg></span>
+        </button>
+        <span class="wx-go">View post &#8599;</span>
+      </div>
+    </div>
+
+    <p class="w-credit rv d3">Independent creative series &middot; published on X</p>
   </div>
 
   <div class="world-band rv">
@@ -2560,7 +2664,7 @@ document.querySelectorAll('.work-card video').forEach(v=>{
   if(!root) return;
 
   const films = Array.from(root.querySelectorAll('video'));
-  const auto  = Array.from(root.querySelectorAll('.wb-film video'));
+  const auto  = Array.from(root.querySelectorAll('.wb-film video, .wx-thumb video'));
   const calm  = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* only the hero film autoplays; the rest wait for a click */
@@ -2592,6 +2696,7 @@ document.querySelectorAll('.work-card video').forEach(v=>{
   });
 
 
+  const cardThumbs = Array.from(root.querySelectorAll('.wx-thumb'));
   /* ---- expand to a contained window, never larger than 1080p ---- */
   const fs = document.createElement('div');
   fs.id = 'wfs';
@@ -2615,17 +2720,27 @@ document.querySelectorAll('.work-card video').forEach(v=>{
     if(!moved) return;
     home.parent.insertBefore(moved, home.next);
     moved.muted = true;
+    if(moved.closest('.wx-thumb')){ moved.controls = false; moved.play().catch(()=>{}); }
     fs.classList.remove('on');
     document.body.style.overflow = '';
     moved = null; home = null;
   }
+  cardThumbs.forEach(th=>{
+    const v = th.querySelector('video');
+    if(!v) return;
+    th.addEventListener('click', e=>{
+      e.preventDefault(); e.stopPropagation();
+      expand(v);
+      v.muted = false; v.controls = true;
+    });
+  });
   fs.querySelector('.wfs-x').addEventListener('click', shrink);
   fs.addEventListener('click', e=>{ if(e.target === fs) shrink(); });
   document.addEventListener('keydown', e=>{
     if(e.key === 'Escape' && fs.classList.contains('on')) shrink();
   });
 
-  films.forEach(v=>{
+  films.filter(v=>!v.closest('.wx-thumb')).forEach(v=>{
     const b = document.createElement('button');
     b.className = 'w-expand';
     b.type = 'button';
