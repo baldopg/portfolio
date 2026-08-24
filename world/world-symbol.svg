@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">World symbol</title>
+  <desc id="desc">Vector World sphere with multicolour light, orbital lines and two highlights.</desc>
+  <defs>
+    <clipPath id="sphere-clip">
+      <path d="M296 26C384 25 458 94 479 178C504 277 450 368 359 414C276 456 179 432 116 365C57 303 64 214 100 145C138 74 217 25 296 26Z"/>
+    </clipPath>
+
+    <linearGradient id="base-colour" x1="100" y1="78" x2="425" y2="402" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7899d5"/>
+      <stop offset="0.27" stop-color="#aaaed3"/>
+      <stop offset="0.49" stop-color="#c9c6ad"/>
+      <stop offset="0.7" stop-color="#67bdc7"/>
+      <stop offset="1" stop-color="#0e7182"/>
+    </linearGradient>
+
+    <radialGradient id="top-gold" cx="0" cy="0" r="1" gradientTransform="translate(292 66) rotate(89) scale(205 235)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffde9" stop-opacity="0.86"/>
+      <stop offset="0.31" stop-color="#eee5bd" stop-opacity="0.82"/>
+      <stop offset="0.68" stop-color="#d8d49f" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#d8d49f" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="left-blue" cx="0" cy="0" r="1" gradientTransform="translate(137 198) rotate(5) scale(166 206)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#78b5f0" stop-opacity="0.9"/>
+      <stop offset="0.42" stop-color="#8594d2" stop-opacity="0.75"/>
+      <stop offset="0.76" stop-color="#787bb8" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#6671a9" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="right-pink" cx="0" cy="0" r="1" gradientTransform="translate(449 176) rotate(172) scale(174 167)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ed5c9a" stop-opacity="0.98"/>
+      <stop offset="0.34" stop-color="#f0829f" stop-opacity="0.86"/>
+      <stop offset="0.7" stop-color="#f3ae9e" stop-opacity="0.27"/>
+      <stop offset="1" stop-color="#f3ae9e" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bottom-cyan" cx="0" cy="0" r="1" gradientTransform="translate(292 354) rotate(-4) scale(225 118)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32e6e1" stop-opacity="0.94"/>
+      <stop offset="0.42" stop-color="#27d1dc" stop-opacity="0.82"/>
+      <stop offset="0.79" stop-color="#149db5" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#0b778d" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="central-haze" cx="0" cy="0" r="1" gradientTransform="translate(308 230) rotate(90) scale(132 175)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#979fa8" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#aeb2ad" stop-opacity="0.21"/>
+      <stop offset="1" stop-color="#aeb2ad" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="edge-depth" cx="0" cy="0" r="1" gradientTransform="translate(285 218) rotate(90) scale(230 220)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.62" stop-color="#001824" stop-opacity="0"/>
+      <stop offset="0.81" stop-color="#001824" stop-opacity="0.12"/>
+      <stop offset="0.95" stop-color="#00131e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000b13" stop-opacity="0.82"/>
+    </radialGradient>
+
+    <linearGradient id="glass" x1="113" y1="99" x2="383" y2="353" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.36"/>
+      <stop offset="0.28" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="0.65" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+
+    <radialGradient id="flare">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.2" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.52" stop-color="#fffde8" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blur-eight" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur-two" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <g id="world-symbol">
+    <g id="sphere" clip-path="url(#sphere-clip)">
+      <path id="sphere-base" d="M296 26C384 25 458 94 479 178C504 277 450 368 359 414C276 456 179 432 116 365C57 303 64 214 100 145C138 74 217 25 296 26Z" fill="url(#base-colour)"/>
+      <rect id="colour-top" x="65" y="20" width="425" height="435" fill="url(#top-gold)"/>
+      <rect id="colour-left" x="65" y="20" width="425" height="435" fill="url(#left-blue)"/>
+      <rect id="colour-right" x="65" y="20" width="425" height="435" fill="url(#right-pink)"/>
+      <rect id="colour-centre" x="65" y="20" width="425" height="435" fill="url(#central-haze)"/>
+      <rect id="colour-bottom" x="65" y="20" width="425" height="435" fill="url(#bottom-cyan)"/>
+      <ellipse id="glass-highlight" cx="220" cy="188" rx="135" ry="178" fill="url(#glass)" opacity="0.55"/>
+      <rect id="sphere-depth" x="65" y="20" width="425" height="435" fill="url(#edge-depth)"/>
+      <path id="left-rim" d="M118 303C93 230 111 157 161 99" fill="none" stroke="#a9e5ff" stroke-opacity="0.38" stroke-width="3"/>
+    </g>
+
+    <g id="orbital-lines" clip-path="url(#sphere-clip)" fill="none" stroke="#fff" stroke-linecap="round">
+      <path id="orbit-diagonal-main" d="M164 72C242 148 326 234 449 358" stroke-opacity="0.78" stroke-width="1.35"/>
+      <path id="orbit-diagonal-mid" d="M251 25C321 96 397 175 483 265" stroke-opacity="0.76" stroke-width="1.25"/>
+      <path id="orbit-diagonal-top" d="M321 23C375 76 433 126 484 178" stroke-opacity="0.8" stroke-width="1.18"/>
+      <path id="orbit-upper-arc" d="M104 299C133 200 223 111 333 71C386 52 424 60 444 92C470 133 447 205 403 274" stroke-opacity="0.48" stroke-width="1.25"/>
+      <path id="orbit-lower-arc" d="M143 345C216 414 315 405 397 325C451 272 480 210 481 160" stroke-opacity="0.5" stroke-width="1.3"/>
+      <path id="orbit-inner-arc" d="M151 354C228 419 325 390 400 312C449 261 474 202 471 148" stroke-opacity="0.28" stroke-width="1.05"/>
+    </g>
+
+    <g id="sparkles" clip-path="url(#sphere-clip)">
+      <g id="sparkle-top" transform="translate(296 91)">
+        <ellipse rx="29" ry="23" fill="url(#flare)" filter="url(#blur-eight)"/>
+        <path d="M0-22L2.8-3L24 0L2.8 3L0 23L-2.8 3L-24 0L-2.8-3Z" fill="#fff" opacity="0.92" filter="url(#blur-two)"/>
+        <path d="M0-19L2-2L21 0L2 2L0 20L-2 2L-21 0L-2-2Z" fill="#fff"/>
+      </g>
+      <g id="sparkle-lower" transform="translate(369 269)">
+        <ellipse rx="29" ry="24" fill="url(#flare)" filter="url(#blur-eight)"/>
+        <path d="M0-22L2.8-3L23 0L2.8 3L0 22L-2.8 3L-23 0L-2.8-3Z" fill="#fff" opacity="0.9" filter="url(#blur-two)"/>
+        <path d="M0-18L2-2L19 0L2 2L0 19L-2 2L-19 0L-2-2Z" fill="#fff"/>
+      </g>
+    </g>
+
+    <path id="sphere-outline" d="M296 26C384 25 458 94 479 178C504 277 450 368 359 414C276 456 179 432 116 365C57 303 64 214 100 145C138 74 217 25 296 26Z" fill="none" stroke="#0a2631" stroke-opacity="0.68" stroke-width="1.15"/>
+  </g>
+</svg>

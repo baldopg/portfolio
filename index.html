@@ -48,29 +48,7 @@ body{
   background:var(--void);
   color:var(--paper);
   overflow-x:hidden;
-  cursor:none;
 }
-@media(max-width:768px){body{cursor:auto}*{cursor:auto!important}}
-
-/* ════════════════════════════════
-   CURSOR
-════════════════════════════════ */
-#cur{
-  position:fixed;width:6px;height:6px;
-  background:var(--gold);border-radius:50%;
-  pointer-events:none;z-index:9999;
-  transform:translate(-50%,-50%);
-  transition:width .2s,height .2s;
-}
-#cur-o{
-  position:fixed;width:32px;height:32px;
-  border:1px solid rgba(105,104,104,.35);
-  border-radius:50%;pointer-events:none;z-index:9998;
-  transform:translate(-50%,-50%);
-  transition:width .3s var(--ease),height .3s var(--ease),border-color .3s,opacity .3s;
-}
-.hover-cursor #cur{width:12px;height:12px;background:var(--gold-hi)}
-.hover-cursor #cur-o{width:50px;height:50px;border-color:var(--gold)}
 
 /* ════════════════════════════════
    LOADING SCREEN
@@ -174,7 +152,7 @@ body{
 .nav-cta:hover{background:var(--gold-hi);transform:translateY(-1px)}
 
 /* ════════════════════════════════
-   HERO — VIDEO BANNER (PRESERVED)
+   HERO · VIDEO BANNER (PRESERVED)
 ════════════════════════════════ */
 #hero{
   position:relative;width:100%;height:100vh;
@@ -212,7 +190,7 @@ body{
 
 /* upload prompt */
 
-/* hero content — left column layout */
+/* hero content · left column layout */
 #hero-content{
   position:absolute;bottom:0;left:0;right:0;z-index:3;
   display:grid;grid-template-columns:1fr auto;
@@ -494,7 +472,7 @@ section{position:relative}
 .id-fact-val strong{color:var(--paper);font-weight:400}
 
 /* ════════════════════════════════
-   ABOUT — asymmetric layout
+   ABOUT · asymmetric layout
 ════════════════════════════════ */
 #about{padding-bottom:8rem;background:var(--void)}
 
@@ -903,7 +881,7 @@ footer{
    Restores legibility for elements that were designed against dark bg
 ═══════════════════════════════════════════════════════════════════ */
 
-/* HERO — text must stay WHITE over the dark video overlay */
+/* HERO · text must stay WHITE over the dark video overlay */
 .hero-title{color:#FFFFFF}
 .hero-title .italic{color:rgba(255,255,255,.6);-webkit-text-stroke:0}
 .hero-title .gold{color:#FFFFFF;opacity:.75}
@@ -916,18 +894,18 @@ footer{
 .scroll-txt{color:rgba(255,255,255,.4)}
 .scroll-dot{background:linear-gradient(to bottom,rgba(255,255,255,.5),transparent)}
 
-/* TICKER — strong contrast strip */
+/* TICKER · strong contrast strip */
 .ticker{background:var(--paper)}
 .ticker-item{color:#FFFFFF}
 .ticker-dot{background:rgba(255,255,255,.25);border-radius:50%}
 
-/* IDENTITY — outline text & serif on light bg */
+/* IDENTITY · outline text & serif on light bg */
 .id-big .line-outline{-webkit-text-stroke:1px rgba(17,17,17,.14)}
 .id-big .line-serif{color:rgba(17,17,17,.42)}
 .id-big em{color:var(--gold);-webkit-text-stroke:0}
 #identity{background:var(--deep);border-top:1px solid var(--rim);border-bottom:1px solid var(--rim)}
 
-/* ABOUT — bio & facts on white */
+/* ABOUT · bio & facts on white */
 .about-bio{color:rgba(17,17,17,.65)}
 .id-fact{border-left:1px solid rgba(105,104,104,.2)}
 .id-fact-label{color:var(--gold);opacity:.8}
@@ -977,7 +955,7 @@ footer{
    conflicts with existing portfolio styles.
 ══════════════════════════════════════════════════════════ */
 
-/* Wheel container — sits at z-index 0, behind everything */
+/* Wheel container · sits at z-index 0, behind everything */
 #hero-wheel {
   position: absolute;
   inset: 0;
@@ -1069,6 +1047,288 @@ footer{
   #hero-ov { background: rgba(255,255,255,0.75); }
 }
 
+
+/* ════════════════════════════════
+   WORLD · brand & campaign system
+   Palette per brand guidelines: light, airy, premium.
+════════════════════════════════ */
+#world{padding-bottom:8rem;background:var(--void)}
+#world{
+  --w-surface:#E4EAEE; --w-glass:#FFFFFF;
+  --w-ink:#060709; --w-2:#5E616C; --w-3:#9295A2;
+  --w-blue:#4E9CFB; --w-pale:#C1DAFA; --w-green:#2AAE4B;
+}
+
+.world-intro{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);
+  gap:clamp(1.5rem,4vw,4rem);align-items:start;margin-bottom:3.5rem;
+}
+@media(max-width:860px){.world-intro{grid-template-columns:1fr;gap:1.75rem}}
+.world-lead{
+  font-family:var(--serif);font-size:clamp(1.05rem,1.7vw,1.45rem);
+  line-height:1.55;color:rgba(17,17,17,.72);max-width:34em;
+}
+.world-lead strong{color:var(--paper);font-weight:600}
+.world-meta{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;align-content:start}
+.world-meta li{
+  font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--smoke);border:1px solid var(--rim);padding:7px 12px;border-radius:100px;
+}
+
+.w-credit{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--smoke);margin:-1.5rem 0 3rem;
+}
+.w-credit a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--rim)}
+.w-credit a:hover{border-color:var(--paper)}
+
+/* full-bleed brand band · light, not dark */
+.world-band{
+  position:relative;width:100%;background:var(--w-surface);
+  margin:0 0 3.5rem;overflow:hidden;
+}
+.wb-strip{
+  overflow:hidden;white-space:nowrap;padding:13px 0;
+  border-bottom:1px solid rgba(6,7,9,.07);
+}
+.wb-strip.btm{border-bottom:none;border-top:1px solid rgba(6,7,9,.07)}
+.wb-strip span{
+  display:inline-block;font-family:var(--mono);font-size:10px;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--w-2);
+  animation:wbSlide 46s linear infinite;
+}
+.wb-strip.btm span{animation-direction:reverse}
+@keyframes wbSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.wb-strip b{color:var(--w-blue);font-weight:400;margin:0 .55rem}
+
+.wb-body{
+  display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.2fr);
+  align-items:center;gap:clamp(2rem,5vw,4rem);
+  padding:clamp(2.5rem,6vw,4.5rem) var(--pad);max-width:1400px;margin:0 auto;
+}
+@media(max-width:900px){.wb-body{grid-template-columns:1fr;justify-items:center;text-align:center}}
+
+.wb-sphere{width:clamp(58px,7vw,88px);height:auto;display:block;margin-bottom:1.6rem}
+@media(max-width:900px){.wb-sphere{margin-inline:auto}}
+.wb-k{
+  font-family:var(--mono);font-size:9px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--w-blue);display:block;margin-bottom:1rem;
+}
+.wb-claim{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.7rem,3.5vw,3.1rem);line-height:1.1;letter-spacing:-.01em;
+  color:var(--w-ink);margin-bottom:1.2rem;max-width:15em;
+}
+@media(max-width:900px){.wb-claim{margin-inline:auto}}
+.wb-claim em{font-style:italic;color:var(--w-2)}
+.wb-note{
+  font-family:var(--mono);font-size:.92rem;line-height:1.65;
+  color:var(--w-2);max-width:32em;
+}
+@media(max-width:900px){.wb-note{margin-inline:auto}}
+
+/* the film, presented as the brand's frosted market card */
+.wb-film{
+  width:100%;aspect-ratio:16/9;flex-shrink:0;
+  background:var(--w-glass);border-radius:18px;padding:10px;
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 24px 60px rgba(6,7,9,.14);
+}
+.wb-film video{width:100%;height:100%;object-fit:cover;display:block;border-radius:10px;background:#000}
+
+/* the catalogue argument */
+.w-stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:1px;background:var(--rim);border:1px solid var(--rim);margin-bottom:3.5rem;
+}
+.w-stat{background:var(--void);padding:1.6rem 1.4rem}
+.w-stat dt{
+  font-family:var(--mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--smoke);margin-bottom:.7rem;
+}
+.w-stat dd{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.3rem);line-height:1;color:var(--paper)}
+.w-stat.hi dd{color:#2C6FD1}
+.w-stat small{
+  display:block;font-family:var(--mono);font-size:10px;letter-spacing:.04em;
+  color:var(--smoke);margin-top:.6rem;text-transform:none;line-height:1.5;
+}
+
+/* asset grid · frosted market cards */
+.world-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:clamp(.75rem,1.5vw,1.25rem);
+}
+.w-card{
+  position:relative;aspect-ratio:9/16;overflow:hidden;background:var(--surface);
+  cursor:zoom-in;border-radius:14px;
+  box-shadow:0 2px 8px rgba(6,7,9,.06);transition:box-shadow .5s var(--ease);
+}
+.w-card:hover{box-shadow:0 18px 44px rgba(6,7,9,.16)}
+.w-card.w-wide{aspect-ratio:16/9;margin-top:clamp(.75rem,1.5vw,1.25rem)}
+.w-card img,.w-card video{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .9s var(--ease);
+}
+.w-card:hover img,.w-card:hover video{transform:scale(1.04)}
+.w-ov{
+  position:absolute;inset:auto 0 0 0;padding:1.8rem 1rem .95rem;
+  background:linear-gradient(to top,rgba(6,7,9,.8),transparent);
+  opacity:0;transition:opacity .4s var(--ease);pointer-events:none;
+}
+/* el film ancho usa controles nativos: nada debe taparlos */
+.w-card.w-wide{cursor:default}
+.w-card.w-wide .w-ov{display:none}
+.w-card.w-wide video{pointer-events:auto}
+.w-card:hover .w-ov{opacity:1}
+.w-cat{
+  font-family:var(--mono);font-size:8px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--w-ink);background:#fff;display:inline-block;padding:3px 8px;
+  border-radius:100px;margin-bottom:.5rem;
+}
+.w-title{font-family:var(--serif);font-size:1rem;color:#fff}
+.w-idx{
+  pointer-events:none;
+  position:absolute;top:.7rem;left:.7rem;font-family:var(--mono);font-size:9px;
+  letter-spacing:.16em;color:var(--w-ink);background:rgba(255,255,255,.88);
+  padding:4px 9px;border-radius:100px;
+}
+.w-play{
+  pointer-events:none;
+  position:absolute;top:.7rem;right:.7rem;font-family:var(--mono);font-size:8px;
+  letter-spacing:.18em;text-transform:uppercase;color:#fff;
+  background:var(--w-blue);padding:4px 9px;border-radius:100px;
+}
+
+
+/* films row */
+.w-films-head{margin:3.5rem 0 1.5rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:1.2rem}
+.w-films-k{
+  font-family:var(--mono);font-size:7pt;font-size:9px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent-dk,#5c6532);
+}
+.w-films-head p{font-size:.95rem;color:var(--smoke);margin:0}
+.w-films{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+  gap:clamp(1rem,2vw,1.75rem);
+}
+.w-film-card{margin:0}
+.w-film-media{
+  position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;
+  border-radius:12px;box-shadow:0 2px 10px rgba(6,7,9,.08);
+}
+.w-film-media video{width:100%;height:100%;object-fit:cover;display:block}
+.w-film-card figcaption{padding:.9rem .1rem 0}
+.w-film-top{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.35rem}
+.w-film-name{font-family:var(--serif);font-size:1.05rem;color:var(--paper)}
+.w-film-dur{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:var(--smoke)}
+.w-film-card figcaption p{font-size:.9rem;line-height:1.5;color:var(--smoke);margin:0}
+
+
+/* expand-to-window control */
+.w-expand{
+  position:absolute;top:.7rem;right:.7rem;z-index:5;
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:#060709;background:rgba(255,255,255,.9);border:none;border-radius:100px;
+  padding:6px 11px;cursor:pointer;opacity:0;transition:opacity .3s var(--ease),background .2s;
+}
+.wb-film:hover .w-expand,.w-film-media:hover .w-expand,.w-expand:focus-visible{opacity:1}
+.w-expand:hover{background:#fff}
+
+#wfs{
+  position:fixed;inset:0;z-index:9500;background:rgba(6,7,9,.93);
+  display:none;align-items:center;justify-content:center;padding:4vh 4vw;
+}
+#wfs.on{display:flex}
+#wfs .wfs-box{
+  position:relative;
+  width:min(1920px,92vw);
+  max-height:86vh;
+  aspect-ratio:16/9;
+  background:#000;border-radius:10px;overflow:hidden;
+  box-shadow:0 40px 100px rgba(0,0,0,.55);
+}
+#wfs video{width:100%;height:100%;object-fit:contain;display:block;background:#000}
+#wfs .wfs-x{
+  position:absolute;top:-2.5rem;right:0;background:none;border:none;color:#F3E6DE;
+  font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  cursor:pointer;padding:.4rem;
+}
+#wfs .wfs-note{
+  position:absolute;bottom:-2rem;left:0;font-family:var(--mono);font-size:9px;
+  letter-spacing:.14em;color:rgba(243,230,222,.5);
+}
+
+/* lightbox */
+#wlb{
+  position:fixed;inset:0;z-index:9000;background:rgba(228,234,238,.97);
+  backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;
+  padding:3vh 4vw;
+}
+#wlb.on{display:flex}
+#wlb .wlb-stage{max-width:min(520px,90vw);max-height:94vh;position:relative}
+#wlb img,#wlb video{max-width:100%;max-height:94vh;object-fit:contain;display:block;border-radius:12px;box-shadow:0 24px 60px rgba(6,7,9,.2)}
+#wlb .wlb-x{
+  position:absolute;top:-2.4rem;right:0;background:none;border:none;color:#060709;
+  font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  cursor:pointer;padding:.4rem;
+}
+#wlb .wlb-nav{
+  position:absolute;top:50%;transform:translateY(-50%);background:none;border:none;
+  color:#060709;font-size:1.9rem;cursor:pointer;padding:1rem;opacity:.5;
+}
+#wlb .wlb-nav:hover{opacity:1}
+#wlb .wlb-prev{left:-3.2rem}
+#wlb .wlb-next{right:-3.2rem}
+@media(max-width:700px){#wlb .wlb-prev{left:-1rem}#wlb .wlb-next{right:-1rem}}
+
+/* ════════════════════════════════
+   BUILT ON MY OWN · self-directed products
+════════════════════════════════ */
+#built{padding-bottom:8rem;background:var(--deep)}
+.built-intro{max-width:46em;margin-bottom:3.5rem}
+.built-lead{
+  font-family:var(--serif);font-size:clamp(1.05rem,1.7vw,1.45rem);
+  line-height:1.55;color:rgba(17,17,17,.72);
+}
+.built-lead strong{color:var(--paper);font-weight:600}
+
+.built-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+  gap:1px;background:var(--rim);border:1px solid var(--rim);
+}
+.bp{
+  background:var(--void);padding:clamp(1.4rem,2.5vw,2rem);
+  display:flex;flex-direction:column;position:relative;
+  transition:background .4s var(--ease);
+}
+.bp:hover{background:var(--surface)}
+.bp-top{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.5rem}
+.bp-n{font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--smoke)}
+.bp-status{
+  font-family:var(--mono);font-size:8px;letter-spacing:.18em;text-transform:uppercase;
+  padding:4px 9px;border-radius:100px;white-space:nowrap;
+}
+.bp-status.live{background:#E6F4EA;color:#1E7A38}
+.bp-status.wip{background:var(--surface);color:var(--smoke);border:1px solid var(--rim)}
+.bp-name{
+  font-family:var(--display);font-size:clamp(1.5rem,2.6vw,2rem);
+  letter-spacing:.02em;line-height:1;margin-bottom:.5rem;color:var(--paper);
+}
+.bp-role{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--smoke);margin-bottom:1rem}
+.bp-desc{font-size:.97rem;line-height:1.6;color:rgba(17,17,17,.66);margin-bottom:1.2rem;flex:1}
+.bp-stack{display:flex;flex-wrap:wrap;gap:.35rem;padding-top:1rem;border-top:1px solid var(--rim)}
+.bp-stack span{
+  font-family:var(--mono);font-size:8.5px;letter-spacing:.08em;
+  color:var(--smoke);border:1px solid var(--rim);padding:4px 8px;border-radius:100px;
+}
+.bp-link{
+  font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--paper);text-decoration:none;margin-top:1rem;
+  display:inline-flex;align-items:center;gap:.4rem;align-self:flex-start;
+  border-bottom:1px solid var(--rim);padding-bottom:2px;transition:border-color .3s;
+}
+.bp-link:hover{border-color:var(--paper)}
+
 </style>
 </head>
 <body>
@@ -1083,8 +1343,6 @@ footer{
 </div>
 
 <!-- CURSOR -->
-<div id="cur"></div>
-<div id="cur-o"></div>
 
 <!-- ══ NAV ══ -->
 <nav id="nav">
@@ -1100,7 +1358,9 @@ footer{
       BPG
     </a>
     <div class="nav-r">
-      <a class="nav-link on" href="#work">Work</a>
+      <a class="nav-link on" href="#world">World</a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#built">Built</a>
       <a class="nav-link" href="#photography">Photography</a>
       <a class="nav-link" href="#about">About</a>
       <button class="nav-cta" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Contact</button>
@@ -1109,7 +1369,7 @@ footer{
 </nav>
 
 <!-- ══════════════════════════════
-     HERO — VIDEO BANNER
+     HERO · VIDEO BANNER
 ══════════════════════════════ -->
 <section id="hero">
 
@@ -1234,7 +1494,7 @@ footer{
         <span class="gold">PERDOMO</span>
         <span class="italic">Garcia</span>
       </h1>
-      <p class="hero-desc">Invisible systems. Visible impact. — Crafting visual languages that are as precise as they are powerful.</p>
+      <p class="hero-desc">Invisible systems. Visible impact. Crafting visual languages that are as precise as they are powerful.</p>
     </div>
 
     <div class="hero-right">
@@ -1286,14 +1546,126 @@ footer{
 </div>
 
 <!-- ══════════════════════════════
-     WORK SECTION
+     WORLD
 ══════════════════════════════ -->
-<section id="work">
+<section id="world">
   <div class="s-watermark rv rv-r">01</div>
   <div class="s-inner">
 
     <div class="divider rv">
       <span class="divider-num">01</span>
+      <div class="divider-line"></div>
+      <h2 class="divider-title">WORLD <em>Trade Everything</em></h2>
+    </div>
+
+    <div class="world-intro">
+      <p class="world-lead rv">Independent creative work exploring <strong>World</strong>, the on-chain prediction market. The identity, product and positioning are theirs; my work builds on that foundation through a series of key visuals, films and social concepts created for X. The creative approach was to translate an almost unbounded product idea into something calm, precise and inevitable, designed to stand apart in a feed built for noise. Selected work was reposted by <strong>@world_xyz</strong>, with some pieces further developed following direct creative feedback from the team.</p>
+      <ul class="world-meta rv d1">
+        <li>Independent series</li><li>Art direction</li><li>3D &amp; Motion</li><li>Key visuals</li><li>Social &middot; X</li><li>2026</li>
+      </ul>
+    </div>
+
+    <p class="w-credit rv d2">Independent creative series &middot; published on X &middot; reposted by <a href="https://x.com/world_xyz" target="_blank" rel="noopener">@world_xyz</a></p>
+  </div>
+
+  <div class="world-band rv">
+    <div class="wb-strip"><span>ROCKET LAUNCHES <b>&#9679;</b> HARVEST YIELDS <b>&#9679;</b> ELECTIONS <b>&#9679;</b> GPU-HOUR PRICES <b>&#9679;</b> DRUG TRIALS <b>&#9679;</b> OPENING WEEKENDS <b>&#9679;</b> CITY RAINFALL <b>&#9679;</b> PRIVATE VALUATIONS <b>&#9679;</b> COMPUTE <b>&#9679;</b> ATTENTION ITSELF <b>&#9679;</b> ROCKET LAUNCHES <b>&#9679;</b> HARVEST YIELDS <b>&#9679;</b> ELECTIONS <b>&#9679;</b> GPU-HOUR PRICES <b>&#9679;</b> DRUG TRIALS <b>&#9679;</b> OPENING WEEKENDS <b>&#9679;</b> CITY RAINFALL <b>&#9679;</b> PRIVATE VALUATIONS <b>&#9679;</b> COMPUTE <b>&#9679;</b> ATTENTION ITSELF <b>&#9679;</b> </span></div>
+
+    <div class="wb-body">
+      <div>
+        <img class="wb-sphere" src="world/world-symbol.svg" alt="World symbol" loading="lazy">
+        <span class="wb-k">The creative premise</span>
+        <h3 class="wb-claim">The bottleneck moves from permission <em>to proof.</em></h3>
+        <p class="wb-note">World&rsquo;s premise is that every exchange ever built is limited by listing. A committee decides what may be traded, where, and during which hours. On-chain there is only one question: can this be resolved by an oracle? The work translates that idea into a feed, without turning it into hype.</p>
+      </div>
+      <div class="wb-film">
+        <video src="https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787576281/TradeRealWorld2_hcount.mp4"
+               poster="https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_1280,f_jpg,q_auto/v1787576281/TradeRealWorld2_hcount.jpg"
+               autoplay muted loop playsinline controls controlslist="nodownload nofullscreen" preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="wb-strip btm"><span>ROCKET LAUNCHES <b>&#9679;</b> HARVEST YIELDS <b>&#9679;</b> ELECTIONS <b>&#9679;</b> GPU-HOUR PRICES <b>&#9679;</b> DRUG TRIALS <b>&#9679;</b> OPENING WEEKENDS <b>&#9679;</b> CITY RAINFALL <b>&#9679;</b> PRIVATE VALUATIONS <b>&#9679;</b> COMPUTE <b>&#9679;</b> ATTENTION ITSELF <b>&#9679;</b> ROCKET LAUNCHES <b>&#9679;</b> HARVEST YIELDS <b>&#9679;</b> ELECTIONS <b>&#9679;</b> GPU-HOUR PRICES <b>&#9679;</b> DRUG TRIALS <b>&#9679;</b> OPENING WEEKENDS <b>&#9679;</b> CITY RAINFALL <b>&#9679;</b> PRIVATE VALUATIONS <b>&#9679;</b> COMPUTE <b>&#9679;</b> ATTENTION ITSELF <b>&#9679;</b> </span></div>
+  </div>
+
+  <div class="s-inner">
+    <dl class="w-stats rv">
+      <div class="w-stat"><dt>Listed on the NYSE</dt><dd>2,400</dd><small>Companies a committee has approved.</small></div>
+      <div class="w-stat"><dt>Listed companies on Earth</dt><dd>50,000</dd><small>Still a catalogue, only a longer one.</small></div>
+      <div class="w-stat hi"><dt>Listable on World</dt><dd>Unbounded</dd><small>Anything that can be defined and resolved.</small></div>
+    </dl>
+
+    <div class="world-grid">
+      <figure class="w-card rv" data-w="0">
+        <img src="https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575843/1_q2dtzy.jpg" alt="World key visual, Call it and find out" loading="lazy">
+        <span class="w-idx">01</span>
+        <figcaption class="w-ov"><span class="w-cat">Key visual</span><div class="w-title">Call it and find out</div></figcaption>
+      </figure>
+      <figure class="w-card rv d1" data-w="1">
+        <img src="https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575843/2_oyijbd.jpg" alt="World key visual, Predict" loading="lazy">
+        <span class="w-idx">02</span>
+        <figcaption class="w-ov"><span class="w-cat">Key visual</span><div class="w-title">Predict</div></figcaption>
+      </figure>
+      <figure class="w-card rv d2" data-w="2">
+        <img src="https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575845/3_b5xyvm.jpg" alt="World key visual, What is World" loading="lazy">
+        <span class="w-idx">03</span>
+        <figcaption class="w-ov"><span class="w-cat">3D render</span><div class="w-title">What is World</div></figcaption>
+      </figure>
+      <figure class="w-card rv" data-w="3">
+        <img src="https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575845/4_emqrtc.jpg" alt="World key visual, Open to resolve" loading="lazy">
+        <span class="w-idx">04</span>
+        <figcaption class="w-ov"><span class="w-cat">Key visual</span><div class="w-title">Open to resolve</div></figcaption>
+      </figure>
+          </div>
+
+    <div class="w-films-head rv">
+      <span class="w-films-k">The films</span>
+      <p>Three cuts from the series. Each runs muted by default. Press play for sound.</p>
+    </div>
+    <div class="w-films">
+        <figure class="w-film-card rv">
+          <div class="w-film-media">
+            <video src="https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580832/0818-happiness-subtitled_utfr8b.mp4" poster="https://res.cloudinary.com/dsaf6aolb/video/upload/so_3,w_1280,f_jpg,q_auto/v1787580832/0818-happiness-subtitled_utfr8b.jpg"
+                   controls controlslist="nodownload nofullscreen" playsinline preload="none"></video>
+          </div>
+          <figcaption>
+            <div class="w-film-top"><span class="w-film-name">Happiness</span><span class="w-film-dur">0:31</span></div>
+            <p>A trading-floor life traded in for something else.</p>
+          </figcaption>
+        </figure>
+        <figure class="w-film-card rv d1">
+          <div class="w-film-media">
+            <video src="https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580397/Prophecy-world-SUBS_tejteb.mp4" poster="https://res.cloudinary.com/dsaf6aolb/video/upload/so_9,w_1280,f_jpg,q_auto/v1787580397/Prophecy-world-SUBS_tejteb.jpg"
+                   controls controlslist="nodownload nofullscreen" playsinline preload="none"></video>
+          </div>
+          <figcaption>
+            <div class="w-film-top"><span class="w-film-name">Prophecy</span><span class="w-film-dur">0:40</span></div>
+            <p>Every civilisation kept the same record. All of them named one date.</p>
+          </figcaption>
+        </figure>
+        <figure class="w-film-card rv d2">
+          <div class="w-film-media">
+            <video src="https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580537/Back_to_world_i4vqdb.mp4" poster="https://res.cloudinary.com/dsaf6aolb/video/upload/so_12,w_1280,f_jpg,q_auto/v1787580537/Back_to_world_i4vqdb.jpg"
+                   controls controlslist="nodownload nofullscreen" playsinline preload="none"></video>
+          </div>
+          <figcaption>
+            <div class="w-film-top"><span class="w-film-name">Back to World</span><span class="w-film-dur">0:57</span></div>
+            <p>The long way round, and the return.</p>
+          </figcaption>
+        </figure>
+    </div>
+      </div>
+</section>
+
+<!-- ══════════════════════════════
+     WORK SECTION
+══════════════════════════════ -->
+<section id="work">
+  <div class="s-watermark rv rv-r">02</div>
+  <div class="s-inner">
+
+    <div class="divider rv">
+      <span class="divider-num">02</span>
       <div class="divider-line"></div>
       <h2 class="divider-title">SELECTED <em>Works</em></h2>
     </div>
@@ -1336,11 +1708,11 @@ footer{
       </div>
 
       <!-- ── 3D & Experiments · Video pieces ── -->
-      <div class="work-card" data-cat="graphic" onclick="openVideoModal('https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354270/HappyLand_-_1987_g6zgsq.mp4','HappyLand — 1987')">
+      <div class="work-card" data-cat="graphic" onclick="openVideoModal('https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354270/HappyLand_-_1987_g6zgsq.mp4','HappyLand · 1987')">
         <video muted loop playsinline preload="metadata">
           <source src="https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354270/HappyLand_-_1987_g6zgsq.mp4" type="video/mp4">
         </video>
-        <div class="wc-ov"><div class="wc-cat">3D & Experiments</div><div class="wc-title">HappyLand — 1987</div></div>
+        <div class="wc-ov"><div class="wc-cat">3D & Experiments</div><div class="wc-title">HappyLand · 1987</div></div>
       </div>
 
       <div class="work-card" data-cat="graphic" onclick="openVideoModal('https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354278/0000-0300_w5zjqz.mp4','Loop')">
@@ -1475,6 +1847,72 @@ footer{
 <!-- ══════════════════════════════
      IDENTITY STRIP
 ══════════════════════════════ -->
+<!-- ══════════════════════════════
+     BUILT ON MY OWN
+══════════════════════════════ -->
+<section id="built">
+  <div class="s-watermark rv rv-r">03</div>
+  <div class="s-inner">
+
+    <div class="divider rv">
+      <span class="divider-num">03</span>
+      <div class="divider-line"></div>
+      <h2 class="divider-title">BUILT <em>On My Own</em></h2>
+    </div>
+
+    <div class="built-intro">
+      <p class="built-lead rv">Since 2021 I have been on parental leave, caring for my son. I used the time to stop handing designs over and to <strong>build them myself</strong>. Kotlin, Jetpack Compose and the modern web stack, all self-taught. One app is live on the Play Store, an AI product went from idea to live in four days. <strong>Every one of these is finished and running. Nothing here is a mockup.</strong></p>
+    </div>
+
+    <div class="built-grid">
+      <article class="bp rv">
+        <div class="bp-top"><span class="bp-n">01</span><span class="bp-status live">Live on Play Store</span></div>
+        <h3 class="bp-name">SplitEasy</h3>
+        <div class="bp-role">Android &middot; solo</div>
+        <p class="bp-desc">Bill splitting with on-device receipt scanning: point the camera at a receipt, OCR reads the items, the app splits them. Product, interface, code, store listing, monetisation and consent flow, all of it alone.</p>
+        <div class="bp-stack"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>Room</span><span>CameraX</span><span>ML Kit OCR</span><span>AdMob + UMP</span><span>R8</span></div>
+      </article>
+      <article class="bp rv d1">
+        <div class="bp-top"><span class="bp-n">02</span><span class="bp-status live">Live</span></div>
+        <h3 class="bp-name">Module 01</h3>
+        <div class="bp-role">Interactive learning &middot; ~8 min</div>
+        <p class="bp-desc">A working e-learning module built as a job application, because describing instructional design in a PDF proves nothing. Five chapters, branching scenarios, an xAPI statement fired on every interaction, and a live tracking panel.</p>
+        <a class="bp-link" href="for-boehringer/index.html">Open it &rarr;</a>
+        <div class="bp-stack"><span>JavaScript</span><span>xAPI</span><span>WCAG 2.2 AA</span><span>EN/DE/ES</span><span>Blender</span><span>Netlify</span></div>
+      </article>
+      <article class="bp rv d2">
+        <div class="bp-top"><span class="bp-n">03</span><span class="bp-status live">Live</span></div>
+        <h3 class="bp-name">Mast</h3>
+        <div class="bp-role">AI product &middot; 4 days</div>
+        <p class="bp-desc">You tie a note to an emotional state instead of a date; months later it recognises you are back in that state and returns your own words. Ships with a forced response schema, a fail-closed parser and a browser-side fallback so the demo still completes when the model is unreachable.</p>
+        <div class="bp-stack"><span>Vanilla JS</span><span>Netlify Functions</span><span>Structured output</span><span>Serverless</span><span>Deploy guard</span></div>
+      </article>
+      <article class="bp rv">
+        <div class="bp-top"><span class="bp-n">04</span><span class="bp-status wip">In development</span></div>
+        <h3 class="bp-name">Faro</h3>
+        <div class="bp-role">Android</div>
+        <p class="bp-desc">Personal finance for people who are not accountants. Privacy is the architecture rather than a policy: no accounts, no sync, no telemetry, encrypted local storage, ads forced to non-personalised with no advertising ID. 94 Kotlin source files against a phased roadmap.</p>
+        <div class="bp-stack"><span>Kotlin</span><span>Compose</span><span>Room + SQLCipher</span><span>Hilt</span><span>Coroutines</span><span>Biometrics</span><span>Glance</span><span>Vico</span></div>
+      </article>
+      <article class="bp rv d1">
+        <div class="bp-top"><span class="bp-n">05</span><span class="bp-status wip">Built</span></div>
+        <h3 class="bp-name">HabitCheck</h3>
+        <div class="bp-role">Android</div>
+        <p class="bp-desc">Habit tracker with reminders that survive a reboot, and a custom Compose calendar heatmap.</p>
+        <div class="bp-stack"><span>Kotlin</span><span>Compose</span><span>Room</span><span>DataStore</span><span>Hilt</span><span>AlarmManager</span></div>
+      </article>
+      <article class="bp rv d2">
+        <div class="bp-top"><span class="bp-n">06</span><span class="bp-status wip">Built</span></div>
+        <h3 class="bp-name">Prism Dodge</h3>
+        <div class="bp-role">Game &middot; signed APK</div>
+        <p class="bp-desc">One-tap Android arcade game, rendered entirely procedurally so it ships with zero binary assets.</p>
+        <div class="bp-stack"><span>Godot 4</span><span>GDScript</span><span>Android signing</span></div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
 <section id="identity">
   <div class="id-grid">
 
@@ -1488,7 +1926,7 @@ footer{
     <div class="id-facts rv-r">
       <div class="id-fact d1">
         <div class="id-fact-label">Recognition</div>
-        <div class="id-fact-val"><strong>SuperRare Open Call Winner</strong> — Work exhibited in Times Square, New York and in Rome, Italy.</div>
+        <div class="id-fact-val"><strong>SuperRare Open Call Winner</strong>. Work exhibited in Times Square, New York and in Rome, Italy.</div>
       </div>
       <div class="id-fact d2">
         <div class="id-fact-label">Industry Experience</div>
@@ -1496,7 +1934,7 @@ footer{
       </div>
       <div class="id-fact d3">
         <div class="id-fact-label">Specialisation</div>
-        <div class="id-fact-val"><strong>3D Product Visualization · Motion Design · Brand Identity</strong> — precision from concept to final render.</div>
+        <div class="id-fact-val"><strong>3D Product Visualization · Motion Design · Brand Identity</strong>. Precision from concept to final render.</div>
       </div>
     </div>
 
@@ -1507,11 +1945,11 @@ footer{
      PHOTOGRAPHY
 ══════════════════════════════ -->
 <section id="photography">
-  <div class="s-watermark rv rv-r">02</div>
+  <div class="s-watermark rv rv-r">04</div>
   <div class="s-inner">
 
     <div class="divider rv">
-      <span class="divider-num">02</span>
+      <span class="divider-num">04</span>
       <div class="divider-line"></div>
       <h2 class="divider-title">VIENNA <em>Street Photography</em></h2>
     </div>
@@ -1627,11 +2065,11 @@ footer{
      ABOUT
 ══════════════════════════════ -->
 <section id="about">
-  <div class="s-watermark rv rv-r">03</div>
+  <div class="s-watermark rv rv-r">05</div>
   <div class="s-inner">
 
     <div class="divider rv">
-      <span class="divider-num">03</span>
+      <span class="divider-num">05</span>
       <div class="divider-line"></div>
       <h2 class="divider-title">ABOUT <em>Me</em></h2>
     </div>
@@ -1641,26 +2079,26 @@ footer{
       <!-- LEFT -->
       <div>
         <p class="about-bio rv d1">
-          <strong>Graphic designer, 3D artist and motion specialist</strong> based in Vienna — originally from Spain. I believe in systems over isolated pieces: visual languages that scale, breathe, and last.<br><br>
+          <strong>Graphic designer, 3D artist and motion specialist</strong> based in Vienna, originally from Spain. I believe in systems over isolated pieces: visual languages that scale, breathe, and last.<br><br>
           After building campaigns for major Austrian brands and earning international recognition for my digital art, I bring both strategic thinking and technical precision to every project.
         </p>
 
         <div class="timeline">
           <div class="tl-item rv d1">
             <span class="tl-org">SuperRare</span>
-            <span class="tl-desc"><strong>Open Call Winner</strong> — Work exhibited in Rome and Times Square, New York</span>
+            <span class="tl-desc"><strong>Open Call Winner</strong>. Work exhibited in Rome and Times Square, New York</span>
           </div>
           <div class="tl-item rv d2">
             <span class="tl-org">GGK Mullenlowe</span>
-            <span class="tl-desc">Campaigns for <strong>Österreichische Lotterien, Puntigamer, Gösser, OMV</strong> — brand consistency across all channels</span>
+            <span class="tl-desc">Campaigns for <strong>Österreichische Lotterien, Puntigamer, Gösser, OMV</strong>. Brand consistency across all channels</span>
           </div>
           <div class="tl-item rv d3">
             <span class="tl-org">SECURIKETT</span>
-            <span class="tl-desc"><strong>Graphic & label designer</strong> in a technically driven environment — precision workflows, packaging</span>
+            <span class="tl-desc"><strong>Graphic & label designer</strong> in a technically driven environment. Precision workflows, packaging</span>
           </div>
           <div class="tl-item rv d4">
             <span class="tl-org">Bosch</span>
-            <span class="tl-desc">Industrial production in Bavaria — structured, disciplined, high-precision workflow</span>
+            <span class="tl-desc">Industrial production in Bavaria. Structured, disciplined, high-precision workflow</span>
           </div>
         </div>
       </div>
@@ -1683,9 +2121,9 @@ footer{
         </div>
 
         <div class="lang-row">
-          <span class="lang-chip">ES — Native</span>
-          <span class="lang-chip">EN — Fluent</span>
-          <span class="lang-chip">DE — Growing</span>
+          <span class="lang-chip">ES &middot; Native</span>
+          <span class="lang-chip">EN &middot; Fluent</span>
+          <span class="lang-chip">DE &middot; Growing</span>
         </div>
 
         <div class="contact-card">
@@ -1695,7 +2133,7 @@ footer{
             Breitenfeldergasse 26, 1080 Vienna<br>
             Austria · Available for projects
           </div>
-          <a class="cc-btn" href="mailto:baldopgarcia@gmail.com?subject=Project%20Inquiry%20—%20Baldomero%20Portfolio">
+          <a class="cc-btn" href="mailto:baldopgarcia@gmail.com?subject=Project%20Inquiry%20%C2%B7%20Baldomero%20Portfolio">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             <span>Send an email</span>
           </a>
@@ -1771,25 +2209,6 @@ window.addEventListener('load', () => {
   }, 1800);
 });
 
-/* ── CURSOR ── */
-const cur = document.getElementById('cur');
-const curO = document.getElementById('cur-o');
-let mx=0,my=0,ox=0,oy=0;
-
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cur.style.left = mx+'px'; cur.style.top = my+'px';
-});
-(function animO(){
-  ox += (mx-ox)*.13; oy += (my-oy)*.13;
-  curO.style.left = ox+'px'; curO.style.top = oy+'px';
-  requestAnimationFrame(animO);
-})();
-document.querySelectorAll('a,button,.work-card,.sk-block,.tl-item,.ph-card').forEach(el=>{
-  el.addEventListener('mouseenter',()=>document.body.classList.add('hover-cursor'));
-  el.addEventListener('mouseleave',()=>document.body.classList.remove('hover-cursor'));
-});
-
 /* ── NAV SCROLL ── */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll',()=>{
@@ -1808,7 +2227,7 @@ window.addEventListener('scroll',()=>{
 });
 
 
-/* ── HERO WHEEL ANIMATION — loaded from riesenrad-animation/script.js ── */
+/* ── HERO WHEEL ANIMATION · loaded from riesenrad-animation/script.js ── */
 
 
 /* ── SCROLL REVEAL ── */
@@ -1820,8 +2239,6 @@ document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>io.observe(el));
 /* ── GALLERY ── */
 /* Wire hover-cursor to static work cards */
 document.querySelectorAll('#gallery .work-card').forEach(card=>{
-  card.addEventListener('mouseenter',()=>document.body.classList.add('hover-cursor'));
-  card.addEventListener('mouseleave',()=>document.body.classList.remove('hover-cursor'));
 });
 
 /* ── FILTERS ── */
@@ -1846,11 +2263,11 @@ const campaigns = {
     tag: 'Spec Work',
     video: 'https://res.cloudinary.com/dsaf6aolb/video/upload/v1774345847/ROS-1080p_ijsalf.mp4',
     photos: [
-      {src:'work/campaigns/ROS-retail-outlet/1.webp', label:'ROS — 01'},
-      {src:'work/campaigns/ROS-retail-outlet/2.webp', label:'ROS — 02'},
-      {src:'work/campaigns/ROS-retail-outlet/3.webp', label:'ROS — 03'},
-      {src:'work/campaigns/ROS-retail-outlet/4.webp', label:'ROS — 04'},
-      {src:'work/campaigns/ROS-retail-outlet/5.webp', label:'ROS — 05'},
+      {src:'work/campaigns/ROS-retail-outlet/1.webp', label:'ROS · 01'},
+      {src:'work/campaigns/ROS-retail-outlet/2.webp', label:'ROS · 02'},
+      {src:'work/campaigns/ROS-retail-outlet/3.webp', label:'ROS · 03'},
+      {src:'work/campaigns/ROS-retail-outlet/4.webp', label:'ROS · 04'},
+      {src:'work/campaigns/ROS-retail-outlet/5.webp', label:'ROS · 05'},
     ]
   },
   puntigamer: {
@@ -1858,9 +2275,9 @@ const campaigns = {
     tag: 'GGK MullenLowe',
     video: null,
     photos: [
-      {src:'work/campaigns/Puntigamer/puntigamer-prost-01.webp',      label:'Prost — 01'},
-      {src:'work/campaigns/Puntigamer/puntigamer-prost-02.webp',      label:'Prost — 02'},
-      {src:'work/campaigns/Puntigamer/puntigamer-prost-03.webp',      label:'Prost — 03'},
+      {src:'work/campaigns/Puntigamer/puntigamer-prost-01.webp',      label:'Prost · 01'},
+      {src:'work/campaigns/Puntigamer/puntigamer-prost-02.webp',      label:'Prost · 02'},
+      {src:'work/campaigns/Puntigamer/puntigamer-prost-03.webp',      label:'Prost · 03'},
       {src:'work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp', label:'Zwickl Key Visual'},
       {src:'work/campaigns/Puntigamer/puntigamer-street.webp',        label:'Street'},
     ]
@@ -1880,10 +2297,10 @@ const campaigns = {
     tag: 'Spec Work',
     video: 'https://res.cloudinary.com/dsaf6aolb/video/upload/v1774349282/Beauty2k_jbp7kn.mp4',
     photos: [
-      {src:'work/campaigns/A.N.D. Beauty/and-beauty-cover.webp', label:'A.N.D. Beauty — 00'},
-      {src:'work/campaigns/A.N.D. Beauty/and-beauty-01.webp',    label:'A.N.D. Beauty — 01'},
-      {src:'work/campaigns/A.N.D. Beauty/and-beauty-02.webp',    label:'A.N.D. Beauty — 02'},
-      {src:'work/campaigns/A.N.D. Beauty/and-beauty-03.webp',    label:'A.N.D. Beauty — 03'},
+      {src:'work/campaigns/A.N.D. Beauty/and-beauty-cover.webp', label:'A.N.D. Beauty · 00'},
+      {src:'work/campaigns/A.N.D. Beauty/and-beauty-01.webp',    label:'A.N.D. Beauty · 01'},
+      {src:'work/campaigns/A.N.D. Beauty/and-beauty-02.webp',    label:'A.N.D. Beauty · 02'},
+      {src:'work/campaigns/A.N.D. Beauty/and-beauty-03.webp',    label:'A.N.D. Beauty · 03'},
     ]
   },
   freyville: {
@@ -1892,8 +2309,8 @@ const campaigns = {
     video: 'https://res.cloudinary.com/dsaf6aolb/video/upload/v1774350362/Helena-Freyville_1_rogzeh.mp4',
     photos: [
       {src:'work/campaigns/FREYVILLE/freyville-final-helena.webp', label:'Final Helena'},
-      {src:'work/campaigns/FREYVILLE/freyville-blender-01.webp',   label:'Blender — 01'},
-      {src:'work/campaigns/FREYVILLE/freyville-blender-02.webp',   label:'Blender — 02'},
+      {src:'work/campaigns/FREYVILLE/freyville-blender-01.webp',   label:'Blender · 01'},
+      {src:'work/campaigns/FREYVILLE/freyville-blender-02.webp',   label:'Blender · 02'},
       {src:'work/campaigns/FREYVILLE/freyville-render.webp',       label:'Render'},
     ]
   },
@@ -1902,8 +2319,8 @@ const campaigns = {
     tag: 'GGK MullenLowe',
     video: null,
     photos: [
-      {src:'work/campaigns/OMV/omv-01.webp', label:'OMV — 01'},
-      {src:'work/campaigns/OMV/omv-02.webp', label:'OMV — 02'},
+      {src:'work/campaigns/OMV/omv-01.webp', label:'OMV · 01'},
+      {src:'work/campaigns/OMV/omv-02.webp', label:'OMV · 02'},
     ]
   },
   lotterien: {
@@ -1911,7 +2328,7 @@ const campaigns = {
     tag: 'GGK MullenLowe',
     video: null,
     photos: [
-      {src:'work/campaigns/Österreichische Lotterien/lotterien-01.webp', label:'Lotterien — 01'},
+      {src:'work/campaigns/Österreichische Lotterien/lotterien-01.webp', label:'Lotterien · 01'},
     ]
   },
   securikett: {
@@ -1920,20 +2337,20 @@ const campaigns = {
     video: null,
     photos: [
       {src:'work/campaigns/Securikett/securikett-01.webp',  label:'Shanghai Tobacco'},
-      {src:'work/campaigns/Securikett/securikett-02.webp',  label:'Securikett — 02'},
-      {src:'work/campaigns/Securikett/securikett-03.webp',  label:'Securikett — 03'},
-      {src:'work/campaigns/Securikett/securikett-04.webp',  label:'Securikett — 04'},
-      {src:'work/campaigns/Securikett/securikett-05.webp',  label:'Securikett — 05'},
-      {src:'work/campaigns/Securikett/securikett-06.webp',  label:'Securikett — 06'},
-      {src:'work/campaigns/Securikett/securikett-07.webp',  label:'Securikett — 07'},
-      {src:'work/campaigns/Securikett/securikett-08.webp',  label:'Securikett — 08'},
-      {src:'work/campaigns/Securikett/securikett-09.webp',  label:'Securikett — 09'},
-      {src:'work/campaigns/Securikett/securikett-10.webp',  label:'Securikett — 10'},
-      {src:'work/campaigns/Securikett/securikett-11.webp',  label:'Securikett — 11'},
-      {src:'work/campaigns/Securikett/securikett-12.webp',  label:'Securikett — 12'},
-      {src:'work/campaigns/Securikett/securikett-13.webp',  label:'Securikett — 13'},
-      {src:'work/campaigns/Securikett/securikett-14.webp',  label:'Securikett — 14'},
-      {src:'work/campaigns/Securikett/securikett-15.webp',  label:'Securikett — 15'},
+      {src:'work/campaigns/Securikett/securikett-02.webp',  label:'Securikett · 02'},
+      {src:'work/campaigns/Securikett/securikett-03.webp',  label:'Securikett · 03'},
+      {src:'work/campaigns/Securikett/securikett-04.webp',  label:'Securikett · 04'},
+      {src:'work/campaigns/Securikett/securikett-05.webp',  label:'Securikett · 05'},
+      {src:'work/campaigns/Securikett/securikett-06.webp',  label:'Securikett · 06'},
+      {src:'work/campaigns/Securikett/securikett-07.webp',  label:'Securikett · 07'},
+      {src:'work/campaigns/Securikett/securikett-08.webp',  label:'Securikett · 08'},
+      {src:'work/campaigns/Securikett/securikett-09.webp',  label:'Securikett · 09'},
+      {src:'work/campaigns/Securikett/securikett-10.webp',  label:'Securikett · 10'},
+      {src:'work/campaigns/Securikett/securikett-11.webp',  label:'Securikett · 11'},
+      {src:'work/campaigns/Securikett/securikett-12.webp',  label:'Securikett · 12'},
+      {src:'work/campaigns/Securikett/securikett-13.webp',  label:'Securikett · 13'},
+      {src:'work/campaigns/Securikett/securikett-14.webp',  label:'Securikett · 14'},
+      {src:'work/campaigns/Securikett/securikett-15.webp',  label:'Securikett · 15'},
     ]
   },
   otherworks: {
@@ -1942,15 +2359,15 @@ const campaigns = {
     video: null,
     photos: [
       {src:'work/branding/Other works/other-visitcard-01.webp',    label:'Visit Card'},
-      {src:'work/branding/Other works/other-visitcard-close.webp', label:'Visit Card — Detail'},
+      {src:'work/branding/Other works/other-visitcard-close.webp', label:'Visit Card · Detail'},
       {src:'work/branding/Other works/other-bianca.webp',          label:'Bianca'},
       {src:'work/branding/Other works/other-bodegas-tamaral.webp', label:'Bodegas Tamaral'},
       {src:'work/branding/Other works/other-vizar-vino.webp',      label:'Vizar Vino'},
       {src:'work/branding/Other works/other-consulting.webp',      label:'Consulting'},
-      {src:'work/branding/Other works/other-lebenshilfe-01.webp',  label:'Lebenshilfe — 01'},
-      {src:'work/branding/Other works/other-lebenshilfe-02.webp',  label:'Lebenshilfe — 02'},
-      {src:'work/branding/Other works/other-lebenshilfe-03.webp',  label:'Lebenshilfe — 03'},
-      {src:'work/branding/Other works/other-lebenshilfe-04.webp',  label:'Lebenshilfe — 04'},
+      {src:'work/branding/Other works/other-lebenshilfe-01.webp',  label:'Lebenshilfe · 01'},
+      {src:'work/branding/Other works/other-lebenshilfe-02.webp',  label:'Lebenshilfe · 02'},
+      {src:'work/branding/Other works/other-lebenshilfe-03.webp',  label:'Lebenshilfe · 03'},
+      {src:'work/branding/Other works/other-lebenshilfe-04.webp',  label:'Lebenshilfe · 04'},
     ]
   }
 };
@@ -1988,8 +2405,6 @@ function openCampaign(id) {
       c.photos.forEach(ph => photoSrcs.push(ph));
       openPhoto(i);
     });
-    div.addEventListener('mouseenter',()=>document.body.classList.add('hover-cursor'));
-    div.addEventListener('mouseleave',()=>document.body.classList.remove('hover-cursor'));
     grid.appendChild(div);
   });
 
@@ -2038,8 +2453,6 @@ document.addEventListener('keydown', e => {
 
 /* wire hover cursor to campaign card */
 document.querySelectorAll('#camps-grid .camp-card').forEach(card=>{
-  card.addEventListener('mouseenter',()=>document.body.classList.add('hover-cursor'));
-  card.addEventListener('mouseleave',()=>document.body.classList.remove('hover-cursor'));
 });
 
 
@@ -2097,8 +2510,6 @@ document.addEventListener('keydown', e => {
 
 /* wire hover cursor to photo cards */
 document.querySelectorAll('.photo-card').forEach(card=>{
-  card.addEventListener('mouseenter',()=>document.body.classList.add('hover-cursor'));
-  card.addEventListener('mouseleave',()=>document.body.classList.remove('hover-cursor'));
 });
 
 /* ── MODAL ── */
@@ -2139,7 +2550,130 @@ document.querySelectorAll('.work-card video').forEach(v=>{
 });
 </script>
 
-<!-- Wheel animation — sourced from riesenrad-animation/script.js -->
+<!-- Wheel animation · sourced from riesenrad-animation/script.js -->
 <script src="riesenrad-animation/script.js" defer></script>
+
+<script>
+/* ════════ WORLD · film behaviour + lightbox ════════ */
+(function(){
+  const root = document.getElementById('world');
+  if(!root) return;
+
+  const films = Array.from(root.querySelectorAll('video'));
+  const auto  = Array.from(root.querySelectorAll('.wb-film video'));
+  const calm  = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* only the hero film autoplays; the rest wait for a click */
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver(es=>es.forEach(e=>{
+      const v = e.target;
+      if(e.isIntersecting){ if(!calm) v.play().catch(()=>{}); }
+      else { v.pause(); v.muted = true; }
+    }),{threshold:.25});
+    auto.forEach(v=>io.observe(v));
+
+    /* anything else simply stops when it scrolls away */
+    const io2 = new IntersectionObserver(es=>es.forEach(e=>{
+      if(!e.isIntersecting) e.target.pause();
+    }),{threshold:.1});
+    films.filter(v=>!auto.includes(v)).forEach(v=>io2.observe(v));
+  }else if(!calm){
+    auto.forEach(v=>v.play().catch(()=>{}));
+  }
+
+  /* only one film may have sound at a time */
+  films.forEach(v=>{
+    v.addEventListener('volumechange',()=>{
+      if(!v.muted) films.forEach(o=>{ if(o!==v) o.muted = true; });
+    });
+    v.addEventListener('play',()=>{
+      if(!v.muted) films.forEach(o=>{ if(o!==v) o.muted = true; });
+    });
+  });
+
+
+  /* ---- expand to a contained window, never larger than 1080p ---- */
+  const fs = document.createElement('div');
+  fs.id = 'wfs';
+  fs.innerHTML = '<div class="wfs-box">'+
+                 '<button class="wfs-x" aria-label="Close">Close &times;</button>'+
+                 '<span class="wfs-note">Max 1920 &times; 1080</span>'+
+                 '</div>';
+  document.body.appendChild(fs);
+  const box = fs.querySelector('.wfs-box');
+  let home = null, moved = null;
+
+  function expand(v){
+    home = { parent: v.parentElement, next: v.nextSibling };
+    moved = v;
+    box.appendChild(v);
+    fs.classList.add('on');
+    document.body.style.overflow = 'hidden';
+    v.play().catch(()=>{});
+  }
+  function shrink(){
+    if(!moved) return;
+    home.parent.insertBefore(moved, home.next);
+    moved.muted = true;
+    fs.classList.remove('on');
+    document.body.style.overflow = '';
+    moved = null; home = null;
+  }
+  fs.querySelector('.wfs-x').addEventListener('click', shrink);
+  fs.addEventListener('click', e=>{ if(e.target === fs) shrink(); });
+  document.addEventListener('keydown', e=>{
+    if(e.key === 'Escape' && fs.classList.contains('on')) shrink();
+  });
+
+  films.forEach(v=>{
+    const b = document.createElement('button');
+    b.className = 'w-expand';
+    b.type = 'button';
+    b.innerHTML = '<span>Expand</span>';
+    b.setAttribute('aria-label','Open in a larger window');
+    b.addEventListener('click', e=>{ e.stopPropagation(); expand(v); });
+    v.parentElement.appendChild(b);
+  });
+
+  /* lightbox: stills only, so the controls on films stay usable */
+  const items = Array.from(root.querySelectorAll('.w-card')).filter(c=>c.querySelector('img'));
+  if(!items.length) return;
+
+  const lb = document.createElement('div');
+  lb.id = 'wlb';
+  lb.innerHTML = '<div class="wlb-stage"><button class="wlb-x" aria-label="Close">Close &times;</button>'+
+                 '<button class="wlb-nav wlb-prev" aria-label="Previous">&#8249;</button>'+
+                 '<button class="wlb-nav wlb-next" aria-label="Next">&#8250;</button>'+
+                 '<div class="wlb-slot"></div></div>';
+  document.body.appendChild(lb);
+  const slot = lb.querySelector('.wlb-slot');
+  let cur = 0;
+
+  function render(i){
+    cur = (i + items.length) % items.length;
+    const src = items[cur].querySelector('img');
+    slot.innerHTML = '';
+    const im = document.createElement('img');
+    im.src = src.src; im.alt = src.alt || '';
+    slot.appendChild(im);
+  }
+  function openLb(i){ render(i); lb.classList.add('on'); document.body.style.overflow='hidden'; }
+  function closeLb(){ lb.classList.remove('on'); slot.innerHTML=''; document.body.style.overflow=''; }
+
+  items.forEach((el,i)=>{
+    el.addEventListener('click',()=>openLb(i));
+  });
+  lb.querySelector('.wlb-x').addEventListener('click',closeLb);
+  lb.querySelector('.wlb-prev').addEventListener('click',e=>{e.stopPropagation();render(cur-1);});
+  lb.querySelector('.wlb-next').addEventListener('click',e=>{e.stopPropagation();render(cur+1);});
+  lb.addEventListener('click',e=>{ if(e.target===lb) closeLb(); });
+  document.addEventListener('keydown',e=>{
+    if(!lb.classList.contains('on')) return;
+    if(e.key==='Escape') closeLb();
+    if(e.key==='ArrowLeft') render(cur-1);
+    if(e.key==='ArrowRight') render(cur+1);
+  });
+})();
+</script>
 </body>
 </html>
