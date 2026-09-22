@@ -866,6 +866,6 @@ export const CONTENT = {
    "DE · Growing"
   ],
   "email": "baldopgarcia@gmail.com",
-  "cv": "/CV-Baldomero-Perdomo-Garcia.pdf"
+  "cv": null
  }
 };

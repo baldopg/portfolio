@@ -1,7 +1,7 @@
 // Vistas de detalle: cada sección se abre a pantalla completa sobre la ciudad desenfocada.
 // Works con filtros y proyectos, galerías con visor, reproductores con sonido.
-import { CONTENT } from './content.js?v=20260922143844';
-import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922143844';
+import { CONTENT } from './content.js?v=20260922144106';
+import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922144106';
 
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const NAMES = { motion: 'Motion', works: 'Works', built: 'Built', architect: 'The architect of form', vienna: 'Vienna', world: 'World', about: 'About' };
@@ -110,7 +110,7 @@ const RENDER = {
       </div>
       <div class="d-actions">
         <a class="pill pill--solid" href="mailto:${esc(c.email)}?subject=Project%20Inquiry%20%C2%B7%20Baldomero%20Portfolio">Send an email</a>
-        <a class="pill" href="${esc(c.cv)}" target="_blank" rel="noopener">CV · PDF</a>
+        ${c.cv ? `<a class="pill" href="${esc(c.cv)}" target="_blank" rel="noopener">CV · PDF</a>` : ''}
       </div>`;
   },
 };

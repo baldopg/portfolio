@@ -170,7 +170,7 @@ content = {
                   ["Premiere Pro", "Proficient"], ["Houdini", "Growing"], ["Unreal Engine", "Proficient"],
                   ["3D Product Visualization", "Advanced"], ["Motion Design", "Advanced"], ["Brand Identity", "Expert"]],
         "languages": ["ES · Native", "EN · Fluent", "DE · Growing"],
-        "email": "baldopgarcia@gmail.com", "cv": P + "CV-Baldomero-Perdomo-Garcia.pdf",
+        "email": "baldopgarcia@gmail.com", "cv": None,   # el PDF no está publicado (lleva teléfono y dirección)
     },
 }
 
