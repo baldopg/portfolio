@@ -15,9 +15,9 @@ for c in d["campaigns"].values():
     paths |= {ph["src"] for ph in c["photos"]}
 paths |= {c["cover"] for c in d["campCards"]}
 # imágenes de los paneles de index.html
-html = (HERE / "index.html").read_text(encoding="utf-8")
+html = (ROOT / "index.html").read_text(encoding="utf-8")
 paths |= {re.sub(r"%([0-9A-F]{2})", lambda m: bytes.fromhex(m.group(1)).decode("latin-1"), p).encode("latin-1").decode("utf-8")
-          for p in re.findall(r'src="\.\./\.\./(work/[^"]+\.(?:webp|jpg|png))"', html)}
+          for p in re.findall(r'src="/(work/[^"]+\.(?:webp|jpg|png))"', html)}
 
 made = skipped = 0
 total_in = total_out = 0

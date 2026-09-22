@@ -17,8 +17,8 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { FXAAShader } from 'three/addons/shaders/FXAAShader.js';
 import Lenis from 'lenis';
-import { setupVideo, ensureLoaded } from './video.js?v=20260922114251';
-import { initDetail } from './detail.js?v=20260922114251';
+import { setupVideo, ensureLoaded } from './video.js?v=20260922141825';
+import { initDetail } from './detail.js?v=20260922141825';
 
 // ------------------------------------------------------------------ constantes
 const SEG = 1.5;          // alturas de ventana de scroll entre dos paradas
@@ -469,8 +469,8 @@ function ownerOf(o) {
 
 async function init() {
   const [path, gltf] = await Promise.all([
-    fetch('camera_path.json').then((r) => r.json()),
-    gltfLoader.loadAsync('city.glb', (e) => { if (e.total) setPct((e.loaded / e.total) * 90); }),
+    fetch(new URL('camera_path.json', import.meta.url)).then((r) => r.json()),
+    gltfLoader.loadAsync(new URL('city.glb', import.meta.url).href, (e) => { if (e.total) setPct((e.loaded / e.total) * 90); }),
   ]);
   keyCount = path.keys.length;
   camCurve = new THREE.CatmullRomCurve3(path.keys.map((k) => B2T(k.cam)), false, 'centripetal');

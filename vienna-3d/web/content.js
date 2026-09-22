@@ -11,23 +11,23 @@ export const CONTENT = {
     "title": "vorauerfriends · Hello!",
     "meta": "Independent study · After Effects · 11 s · sound design",
     "text": "The letters of a hello turn into a waving hand, then into the VF logo, a wink and a signature. Every stroke is rounded.",
-    "src": "../../work/motion/vf-hello.mp4",
-    "poster": "../../work/motion/vf-hello-poster.jpg"
+    "src": "/work/motion/vf-hello.mp4",
+    "poster": "/work/motion/vf-hello-poster.jpg"
    },
    {
     "title": "vorauerfriends · Hello! in 3D",
     "meta": "Independent study · After Effects Cinema 4D renderer · 11 s",
     "text": "The same choreography rebuilt in 3D: flat colour without lights, real extrusion and a real 3D camera.",
-    "src": "../../work/motion/vf-hello-3d.mp4",
-    "poster": "../../work/motion/vf-hello-3d-poster.jpg"
+    "src": "/work/motion/vf-hello-3d.mp4",
+    "poster": "/work/motion/vf-hello-3d-poster.jpg"
    },
    {
     "title": "fonio · Anruf angenommen",
     "meta": "Independent study · After Effects · 4.5 s · alpha video",
     "text": "A logo animation for an AI phone assistant: the call is picked up by a classic handset with slots.",
-    "src": "../../work/motion/fonio-logo.mp4",
-    "srcWebm": "../../work/motion/fonio-logo.webm",
-    "poster": "../../work/motion/fonio-logo-poster.webp",
+    "src": "/work/motion/fonio-logo.mp4",
+    "srcWebm": "/work/motion/fonio-logo.webm",
+    "poster": "/work/motion/fonio-logo-poster.webp",
     "light": true
    }
   ]
@@ -50,29 +50,29 @@ export const CONTENT = {
     "type": "image",
     "title": "Fragile Self",
     "cat": "3D & Experiments",
-    "src": "../../work/graphic-design/fragile-self.webp",
-    "thumb": "thumbs/work/graphic-design/fragile-self.webp"
+    "src": "/work/graphic-design/fragile-self.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/graphic-design/fragile-self.webp"
    },
    {
     "type": "image",
     "title": "Worship",
     "cat": "3D & Experiments",
-    "src": "../../work/graphic-design/worship.webp",
-    "thumb": "thumbs/work/graphic-design/worship.webp"
+    "src": "/work/graphic-design/worship.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/graphic-design/worship.webp"
    },
    {
     "type": "image",
     "title": "Preludio",
     "cat": "3D & Experiments",
-    "src": "../../work/graphic-design/preludio.webp",
-    "thumb": "thumbs/work/graphic-design/preludio.webp"
+    "src": "/work/graphic-design/preludio.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/graphic-design/preludio.webp"
    },
    {
     "type": "image",
     "title": "Losing Hope",
     "cat": "3D & Experiments",
-    "src": "../../work/graphic-design/losing-hope.webp",
-    "thumb": "thumbs/work/graphic-design/losing-hope.webp"
+    "src": "/work/graphic-design/losing-hope.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/graphic-design/losing-hope.webp"
    },
    {
     "type": "video",
@@ -137,24 +137,24 @@ export const CONTENT = {
     "cat": "Branding",
     "title": "Botanical Tonic Water",
     "tag": "Branding",
-    "cover": "../../work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
-    "coverThumb": "thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
+    "cover": "/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
     "video": null,
     "videoPoster": null,
     "photos": [
      {
-      "src": "../../work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
-      "thumb": "thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
+      "src": "/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
       "label": "Botanical Water"
      },
      {
-      "src": "../../work/branding/Botanical Tonic Water/botanical-tonic-water-02.webp",
-      "thumb": "thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-02.webp",
+      "src": "/work/branding/Botanical Tonic Water/botanical-tonic-water-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-02.webp",
       "label": "Tonic Water"
      },
      {
-      "src": "../../work/branding/Botanical Tonic Water/botanical-tonic-water-diptic.webp",
-      "thumb": "thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-diptic.webp",
+      "src": "/work/branding/Botanical Tonic Water/botanical-tonic-water-diptic.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-diptic.webp",
       "label": "Diptic"
      }
     ]
@@ -164,34 +164,34 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "ROS Retail Outlet",
     "tag": "Spec Work",
-    "cover": "../../work/campaigns/ROS-retail-outlet/1.webp",
-    "coverThumb": "thumbs/work/campaigns/ROS-retail-outlet/1.webp",
+    "cover": "/work/campaigns/ROS-retail-outlet/1.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/1.webp",
     "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774345847/ROS-1080p_ijsalf.mp4",
     "videoPoster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774345847/ROS-1080p_ijsalf.jpg",
     "photos": [
      {
-      "src": "../../work/campaigns/ROS-retail-outlet/1.webp",
-      "thumb": "thumbs/work/campaigns/ROS-retail-outlet/1.webp",
+      "src": "/work/campaigns/ROS-retail-outlet/1.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/1.webp",
       "label": "ROS · 01"
      },
      {
-      "src": "../../work/campaigns/ROS-retail-outlet/2.webp",
-      "thumb": "thumbs/work/campaigns/ROS-retail-outlet/2.webp",
+      "src": "/work/campaigns/ROS-retail-outlet/2.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/2.webp",
       "label": "ROS · 02"
      },
      {
-      "src": "../../work/campaigns/ROS-retail-outlet/3.webp",
-      "thumb": "thumbs/work/campaigns/ROS-retail-outlet/3.webp",
+      "src": "/work/campaigns/ROS-retail-outlet/3.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/3.webp",
       "label": "ROS · 03"
      },
      {
-      "src": "../../work/campaigns/ROS-retail-outlet/4.webp",
-      "thumb": "thumbs/work/campaigns/ROS-retail-outlet/4.webp",
+      "src": "/work/campaigns/ROS-retail-outlet/4.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/4.webp",
       "label": "ROS · 04"
      },
      {
-      "src": "../../work/campaigns/ROS-retail-outlet/5.webp",
-      "thumb": "thumbs/work/campaigns/ROS-retail-outlet/5.webp",
+      "src": "/work/campaigns/ROS-retail-outlet/5.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/5.webp",
       "label": "ROS · 05"
      }
     ]
@@ -201,34 +201,34 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "Puntigamer Beer",
     "tag": "GGK MullenLowe",
-    "cover": "../../work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
-    "coverThumb": "thumbs/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
+    "cover": "/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
     "video": null,
     "videoPoster": null,
     "photos": [
      {
-      "src": "../../work/campaigns/Puntigamer/puntigamer-prost-01.webp",
-      "thumb": "thumbs/work/campaigns/Puntigamer/puntigamer-prost-01.webp",
+      "src": "/work/campaigns/Puntigamer/puntigamer-prost-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-prost-01.webp",
       "label": "Prost · 01"
      },
      {
-      "src": "../../work/campaigns/Puntigamer/puntigamer-prost-02.webp",
-      "thumb": "thumbs/work/campaigns/Puntigamer/puntigamer-prost-02.webp",
+      "src": "/work/campaigns/Puntigamer/puntigamer-prost-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-prost-02.webp",
       "label": "Prost · 02"
      },
      {
-      "src": "../../work/campaigns/Puntigamer/puntigamer-prost-03.webp",
-      "thumb": "thumbs/work/campaigns/Puntigamer/puntigamer-prost-03.webp",
+      "src": "/work/campaigns/Puntigamer/puntigamer-prost-03.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-prost-03.webp",
       "label": "Prost · 03"
      },
      {
-      "src": "../../work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
-      "thumb": "thumbs/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
+      "src": "/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
       "label": "Zwickl Key Visual"
      },
      {
-      "src": "../../work/campaigns/Puntigamer/puntigamer-street.webp",
-      "thumb": "thumbs/work/campaigns/Puntigamer/puntigamer-street.webp",
+      "src": "/work/campaigns/Puntigamer/puntigamer-street.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-street.webp",
       "label": "Street"
      }
     ]
@@ -238,29 +238,29 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "A.N.D. Beauty",
     "tag": "Spec Work",
-    "cover": "../../work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
-    "coverThumb": "thumbs/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
+    "cover": "/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
     "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774349282/Beauty2k_jbp7kn.mp4",
     "videoPoster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774349282/Beauty2k_jbp7kn.jpg",
     "photos": [
      {
-      "src": "../../work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
-      "thumb": "thumbs/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
+      "src": "/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
       "label": "A.N.D. Beauty · 00"
      },
      {
-      "src": "../../work/campaigns/A.N.D. Beauty/and-beauty-01.webp",
-      "thumb": "thumbs/work/campaigns/A.N.D. Beauty/and-beauty-01.webp",
+      "src": "/work/campaigns/A.N.D. Beauty/and-beauty-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/A.N.D. Beauty/and-beauty-01.webp",
       "label": "A.N.D. Beauty · 01"
      },
      {
-      "src": "../../work/campaigns/A.N.D. Beauty/and-beauty-02.webp",
-      "thumb": "thumbs/work/campaigns/A.N.D. Beauty/and-beauty-02.webp",
+      "src": "/work/campaigns/A.N.D. Beauty/and-beauty-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/A.N.D. Beauty/and-beauty-02.webp",
       "label": "A.N.D. Beauty · 02"
      },
      {
-      "src": "../../work/campaigns/A.N.D. Beauty/and-beauty-03.webp",
-      "thumb": "thumbs/work/campaigns/A.N.D. Beauty/and-beauty-03.webp",
+      "src": "/work/campaigns/A.N.D. Beauty/and-beauty-03.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/A.N.D. Beauty/and-beauty-03.webp",
       "label": "A.N.D. Beauty · 03"
      }
     ]
@@ -270,29 +270,29 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "FREYVILLE",
     "tag": "Spec Work",
-    "cover": "../../work/campaigns/FREYVILLE/freyville-final-helena.webp",
-    "coverThumb": "thumbs/work/campaigns/FREYVILLE/freyville-final-helena.webp",
+    "cover": "/work/campaigns/FREYVILLE/freyville-final-helena.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/FREYVILLE/freyville-final-helena.webp",
     "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774350362/Helena-Freyville_1_rogzeh.mp4",
     "videoPoster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774350362/Helena-Freyville_1_rogzeh.jpg",
     "photos": [
      {
-      "src": "../../work/campaigns/FREYVILLE/freyville-final-helena.webp",
-      "thumb": "thumbs/work/campaigns/FREYVILLE/freyville-final-helena.webp",
+      "src": "/work/campaigns/FREYVILLE/freyville-final-helena.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/FREYVILLE/freyville-final-helena.webp",
       "label": "Final Helena"
      },
      {
-      "src": "../../work/campaigns/FREYVILLE/freyville-blender-01.webp",
-      "thumb": "thumbs/work/campaigns/FREYVILLE/freyville-blender-01.webp",
+      "src": "/work/campaigns/FREYVILLE/freyville-blender-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/FREYVILLE/freyville-blender-01.webp",
       "label": "Blender · 01"
      },
      {
-      "src": "../../work/campaigns/FREYVILLE/freyville-blender-02.webp",
-      "thumb": "thumbs/work/campaigns/FREYVILLE/freyville-blender-02.webp",
+      "src": "/work/campaigns/FREYVILLE/freyville-blender-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/FREYVILLE/freyville-blender-02.webp",
       "label": "Blender · 02"
      },
      {
-      "src": "../../work/campaigns/FREYVILLE/freyville-render.webp",
-      "thumb": "thumbs/work/campaigns/FREYVILLE/freyville-render.webp",
+      "src": "/work/campaigns/FREYVILLE/freyville-render.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/FREYVILLE/freyville-render.webp",
       "label": "Render"
      }
     ]
@@ -302,84 +302,84 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "Securikett",
     "tag": "GGK MullenLowe",
-    "cover": "../../work/campaigns/Securikett/securikett-01.webp",
-    "coverThumb": "thumbs/work/campaigns/Securikett/securikett-01.webp",
+    "cover": "/work/campaigns/Securikett/securikett-01.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-01.webp",
     "video": null,
     "videoPoster": null,
     "photos": [
      {
-      "src": "../../work/campaigns/Securikett/securikett-01.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-01.webp",
+      "src": "/work/campaigns/Securikett/securikett-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-01.webp",
       "label": "Shanghai Tobacco"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-02.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-02.webp",
+      "src": "/work/campaigns/Securikett/securikett-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-02.webp",
       "label": "Securikett · 02"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-03.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-03.webp",
+      "src": "/work/campaigns/Securikett/securikett-03.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-03.webp",
       "label": "Securikett · 03"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-04.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-04.webp",
+      "src": "/work/campaigns/Securikett/securikett-04.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-04.webp",
       "label": "Securikett · 04"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-05.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-05.webp",
+      "src": "/work/campaigns/Securikett/securikett-05.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-05.webp",
       "label": "Securikett · 05"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-06.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-06.webp",
+      "src": "/work/campaigns/Securikett/securikett-06.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-06.webp",
       "label": "Securikett · 06"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-07.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-07.webp",
+      "src": "/work/campaigns/Securikett/securikett-07.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-07.webp",
       "label": "Securikett · 07"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-08.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-08.webp",
+      "src": "/work/campaigns/Securikett/securikett-08.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-08.webp",
       "label": "Securikett · 08"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-09.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-09.webp",
+      "src": "/work/campaigns/Securikett/securikett-09.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-09.webp",
       "label": "Securikett · 09"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-10.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-10.webp",
+      "src": "/work/campaigns/Securikett/securikett-10.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-10.webp",
       "label": "Securikett · 10"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-11.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-11.webp",
+      "src": "/work/campaigns/Securikett/securikett-11.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-11.webp",
       "label": "Securikett · 11"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-12.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-12.webp",
+      "src": "/work/campaigns/Securikett/securikett-12.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-12.webp",
       "label": "Securikett · 12"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-13.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-13.webp",
+      "src": "/work/campaigns/Securikett/securikett-13.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-13.webp",
       "label": "Securikett · 13"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-14.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-14.webp",
+      "src": "/work/campaigns/Securikett/securikett-14.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-14.webp",
       "label": "Securikett · 14"
      },
      {
-      "src": "../../work/campaigns/Securikett/securikett-15.webp",
-      "thumb": "thumbs/work/campaigns/Securikett/securikett-15.webp",
+      "src": "/work/campaigns/Securikett/securikett-15.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-15.webp",
       "label": "Securikett · 15"
      }
     ]
@@ -389,19 +389,19 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "OMV",
     "tag": "GGK MullenLowe",
-    "cover": "../../work/campaigns/OMV/omv-01.webp",
-    "coverThumb": "thumbs/work/campaigns/OMV/omv-01.webp",
+    "cover": "/work/campaigns/OMV/omv-01.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/OMV/omv-01.webp",
     "video": null,
     "videoPoster": null,
     "photos": [
      {
-      "src": "../../work/campaigns/OMV/omv-01.webp",
-      "thumb": "thumbs/work/campaigns/OMV/omv-01.webp",
+      "src": "/work/campaigns/OMV/omv-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/OMV/omv-01.webp",
       "label": "OMV · 01"
      },
      {
-      "src": "../../work/campaigns/OMV/omv-02.webp",
-      "thumb": "thumbs/work/campaigns/OMV/omv-02.webp",
+      "src": "/work/campaigns/OMV/omv-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/OMV/omv-02.webp",
       "label": "OMV · 02"
      }
     ]
@@ -411,14 +411,14 @@ export const CONTENT = {
     "cat": "Campaigns",
     "title": "Österreichische Lotterien",
     "tag": "GGK MullenLowe",
-    "cover": "../../work/campaigns/Österreichische Lotterien/lotterien-01.webp",
-    "coverThumb": "thumbs/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
+    "cover": "/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
     "video": null,
     "videoPoster": null,
     "photos": [
      {
-      "src": "../../work/campaigns/Österreichische Lotterien/lotterien-01.webp",
-      "thumb": "thumbs/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
+      "src": "/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
       "label": "Lotterien · 01"
      }
     ]
@@ -428,59 +428,59 @@ export const CONTENT = {
     "cat": "Branding",
     "title": "Other Works",
     "tag": "Branding",
-    "cover": "../../work/branding/Other works/other-lebenshilfe-03.webp",
-    "coverThumb": "thumbs/work/branding/Other works/other-lebenshilfe-03.webp",
+    "cover": "/work/branding/Other works/other-lebenshilfe-03.webp",
+    "coverThumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-lebenshilfe-03.webp",
     "video": null,
     "videoPoster": null,
     "photos": [
      {
-      "src": "../../work/branding/Other works/other-visitcard-01.webp",
-      "thumb": "thumbs/work/branding/Other works/other-visitcard-01.webp",
+      "src": "/work/branding/Other works/other-visitcard-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-visitcard-01.webp",
       "label": "Visit Card"
      },
      {
-      "src": "../../work/branding/Other works/other-visitcard-close.webp",
-      "thumb": "thumbs/work/branding/Other works/other-visitcard-close.webp",
+      "src": "/work/branding/Other works/other-visitcard-close.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-visitcard-close.webp",
       "label": "Visit Card · Detail"
      },
      {
-      "src": "../../work/branding/Other works/other-bianca.webp",
-      "thumb": "thumbs/work/branding/Other works/other-bianca.webp",
+      "src": "/work/branding/Other works/other-bianca.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-bianca.webp",
       "label": "Bianca"
      },
      {
-      "src": "../../work/branding/Other works/other-bodegas-tamaral.webp",
-      "thumb": "thumbs/work/branding/Other works/other-bodegas-tamaral.webp",
+      "src": "/work/branding/Other works/other-bodegas-tamaral.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-bodegas-tamaral.webp",
       "label": "Bodegas Tamaral"
      },
      {
-      "src": "../../work/branding/Other works/other-vizar-vino.webp",
-      "thumb": "thumbs/work/branding/Other works/other-vizar-vino.webp",
+      "src": "/work/branding/Other works/other-vizar-vino.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-vizar-vino.webp",
       "label": "Vizar Vino"
      },
      {
-      "src": "../../work/branding/Other works/other-consulting.webp",
-      "thumb": "thumbs/work/branding/Other works/other-consulting.webp",
+      "src": "/work/branding/Other works/other-consulting.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-consulting.webp",
       "label": "Consulting"
      },
      {
-      "src": "../../work/branding/Other works/other-lebenshilfe-01.webp",
-      "thumb": "thumbs/work/branding/Other works/other-lebenshilfe-01.webp",
+      "src": "/work/branding/Other works/other-lebenshilfe-01.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-lebenshilfe-01.webp",
       "label": "Lebenshilfe · 01"
      },
      {
-      "src": "../../work/branding/Other works/other-lebenshilfe-02.webp",
-      "thumb": "thumbs/work/branding/Other works/other-lebenshilfe-02.webp",
+      "src": "/work/branding/Other works/other-lebenshilfe-02.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-lebenshilfe-02.webp",
       "label": "Lebenshilfe · 02"
      },
      {
-      "src": "../../work/branding/Other works/other-lebenshilfe-03.webp",
-      "thumb": "thumbs/work/branding/Other works/other-lebenshilfe-03.webp",
+      "src": "/work/branding/Other works/other-lebenshilfe-03.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-lebenshilfe-03.webp",
       "label": "Lebenshilfe · 03"
      },
      {
-      "src": "../../work/branding/Other works/other-lebenshilfe-04.webp",
-      "thumb": "thumbs/work/branding/Other works/other-lebenshilfe-04.webp",
+      "src": "/work/branding/Other works/other-lebenshilfe-04.webp",
+      "thumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-lebenshilfe-04.webp",
       "label": "Lebenshilfe · 04"
      }
     ]
@@ -524,7 +524,7 @@ export const CONTENT = {
      "Blender",
      "Netlify"
     ],
-    "link": "../../for-boehringer/index.html"
+    "link": "/for-boehringer/index.html"
    },
    {
     "n": "03",
@@ -613,103 +613,103 @@ export const CONTENT = {
   "intro": "Street photography from the city this model is made of.",
   "photos": [
    {
-    "src": "../../work/photography/Vienna Street Photography 01.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 01.webp",
+    "src": "/work/photography/Vienna Street Photography 01.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 01.webp",
     "label": "Vienna Street Photography 01"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 02.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 02.webp",
+    "src": "/work/photography/Vienna Street Photography 02.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 02.webp",
     "label": "Vienna Street Photography 02"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 03.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 03.webp",
+    "src": "/work/photography/Vienna Street Photography 03.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 03.webp",
     "label": "Vienna Street Photography 03"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 04.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 04.webp",
+    "src": "/work/photography/Vienna Street Photography 04.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 04.webp",
     "label": "Vienna Street Photography 04"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 05.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 05.webp",
+    "src": "/work/photography/Vienna Street Photography 05.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 05.webp",
     "label": "Vienna Street Photography 05"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 06.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 06.webp",
+    "src": "/work/photography/Vienna Street Photography 06.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 06.webp",
     "label": "Vienna Street Photography 06"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 07.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 07.webp",
+    "src": "/work/photography/Vienna Street Photography 07.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 07.webp",
     "label": "Vienna Street Photography 07"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 08.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 08.webp",
+    "src": "/work/photography/Vienna Street Photography 08.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 08.webp",
     "label": "Vienna Street Photography 08"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 09.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 09.webp",
+    "src": "/work/photography/Vienna Street Photography 09.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 09.webp",
     "label": "Vienna Street Photography 09"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 10.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 10.webp",
+    "src": "/work/photography/Vienna Street Photography 10.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 10.webp",
     "label": "Vienna Street Photography 10"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 11.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 11.webp",
+    "src": "/work/photography/Vienna Street Photography 11.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 11.webp",
     "label": "Vienna Street Photography 11"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 12.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 12.webp",
+    "src": "/work/photography/Vienna Street Photography 12.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 12.webp",
     "label": "Vienna Street Photography 12"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 13.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 13.webp",
+    "src": "/work/photography/Vienna Street Photography 13.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 13.webp",
     "label": "Vienna Street Photography 13"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 14.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 14.webp",
+    "src": "/work/photography/Vienna Street Photography 14.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 14.webp",
     "label": "Vienna Street Photography 14"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 15.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 15.webp",
+    "src": "/work/photography/Vienna Street Photography 15.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 15.webp",
     "label": "Vienna Street Photography 15"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 16.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 16.webp",
+    "src": "/work/photography/Vienna Street Photography 16.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 16.webp",
     "label": "Vienna Street Photography 16"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 17.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 17.webp",
+    "src": "/work/photography/Vienna Street Photography 17.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 17.webp",
     "label": "Vienna Street Photography 17"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 18.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 18.webp",
+    "src": "/work/photography/Vienna Street Photography 18.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 18.webp",
     "label": "Vienna Street Photography 18"
    },
    {
-    "src": "../../work/photography/Vienna Street Photography 19.webp",
-    "thumb": "thumbs/work/photography/Vienna Street Photography 19.webp",
+    "src": "/work/photography/Vienna Street Photography 19.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/Vienna Street Photography 19.webp",
     "label": "Vienna Street Photography 19"
    },
    {
-    "src": "../../work/photography/The Other Side of the Lens.webp",
-    "thumb": "thumbs/work/photography/The Other Side of the Lens.webp",
+    "src": "/work/photography/The Other Side of the Lens.webp",
+    "thumb": "/vienna-3d/web/thumbs/work/photography/The Other Side of the Lens.webp",
     "label": "The Other Side of the Lens"
    }
   ]
@@ -841,6 +841,6 @@ export const CONTENT = {
    "DE · Growing"
   ],
   "email": "baldopgarcia@gmail.com",
-  "cv": "../../CV-Baldomero-Perdomo-Garcia.pdf"
+  "cv": "/CV-Baldomero-Perdomo-Garcia.pdf"
  }
 };

@@ -5,12 +5,12 @@ import json, pathlib
 
 HERE = pathlib.Path(__file__).parent
 d = json.loads((HERE / "content_extract.json").read_text(encoding="utf-8"))
-P = "../../"   # la web vive en portfolio/vienna-3d/web/
+P = "/"   # la web es la portada del sitio; rutas desde la raíz
 
 
 def thumb(rel):
     """Miniatura de 640 px generada por make_thumbs.py (ruta relativa a la web)."""
-    return "thumbs/" + rel.rsplit(".", 1)[0] + ".webp"
+    return "/vienna-3d/web/thumbs/" + rel.rsplit(".", 1)[0] + ".webp"
 
 
 def cld(url, tr):
