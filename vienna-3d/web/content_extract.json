@@ -1,0 +1,432 @@
+{
+ "campaigns": {
+  "ros": {
+   "name": "ROS RETAIL OUTLET",
+   "tag": "Spec Work",
+   "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774345847/ROS-1080p_ijsalf.mp4",
+   "photos": [
+    {
+     "src": "work/campaigns/ROS-retail-outlet/1.webp",
+     "label": "ROS · 01"
+    },
+    {
+     "src": "work/campaigns/ROS-retail-outlet/2.webp",
+     "label": "ROS · 02"
+    },
+    {
+     "src": "work/campaigns/ROS-retail-outlet/3.webp",
+     "label": "ROS · 03"
+    },
+    {
+     "src": "work/campaigns/ROS-retail-outlet/4.webp",
+     "label": "ROS · 04"
+    },
+    {
+     "src": "work/campaigns/ROS-retail-outlet/5.webp",
+     "label": "ROS · 05"
+    }
+   ]
+  },
+  "puntigamer": {
+   "name": "PUNTIGAMER BEER",
+   "tag": "GGK MullenLowe",
+   "video": null,
+   "photos": [
+    {
+     "src": "work/campaigns/Puntigamer/puntigamer-prost-01.webp",
+     "label": "Prost · 01"
+    },
+    {
+     "src": "work/campaigns/Puntigamer/puntigamer-prost-02.webp",
+     "label": "Prost · 02"
+    },
+    {
+     "src": "work/campaigns/Puntigamer/puntigamer-prost-03.webp",
+     "label": "Prost · 03"
+    },
+    {
+     "src": "work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
+     "label": "Zwickl Key Visual"
+    },
+    {
+     "src": "work/campaigns/Puntigamer/puntigamer-street.webp",
+     "label": "Street"
+    }
+   ]
+  },
+  "botanical": {
+   "name": "BOTANICAL TONIC WATER",
+   "tag": "Branding",
+   "video": null,
+   "photos": [
+    {
+     "src": "work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
+     "label": "Botanical Water"
+    },
+    {
+     "src": "work/branding/Botanical Tonic Water/botanical-tonic-water-02.webp",
+     "label": "Tonic Water"
+    },
+    {
+     "src": "work/branding/Botanical Tonic Water/botanical-tonic-water-diptic.webp",
+     "label": "Diptic"
+    }
+   ]
+  },
+  "and": {
+   "name": "A.N.D. BEAUTY",
+   "tag": "Spec Work",
+   "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774349282/Beauty2k_jbp7kn.mp4",
+   "photos": [
+    {
+     "src": "work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
+     "label": "A.N.D. Beauty · 00"
+    },
+    {
+     "src": "work/campaigns/A.N.D. Beauty/and-beauty-01.webp",
+     "label": "A.N.D. Beauty · 01"
+    },
+    {
+     "src": "work/campaigns/A.N.D. Beauty/and-beauty-02.webp",
+     "label": "A.N.D. Beauty · 02"
+    },
+    {
+     "src": "work/campaigns/A.N.D. Beauty/and-beauty-03.webp",
+     "label": "A.N.D. Beauty · 03"
+    }
+   ]
+  },
+  "freyville": {
+   "name": "FREYVILLE",
+   "tag": "Spec Work",
+   "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774350362/Helena-Freyville_1_rogzeh.mp4",
+   "photos": [
+    {
+     "src": "work/campaigns/FREYVILLE/freyville-final-helena.webp",
+     "label": "Final Helena"
+    },
+    {
+     "src": "work/campaigns/FREYVILLE/freyville-blender-01.webp",
+     "label": "Blender · 01"
+    },
+    {
+     "src": "work/campaigns/FREYVILLE/freyville-blender-02.webp",
+     "label": "Blender · 02"
+    },
+    {
+     "src": "work/campaigns/FREYVILLE/freyville-render.webp",
+     "label": "Render"
+    }
+   ]
+  },
+  "omv": {
+   "name": "OMV",
+   "tag": "GGK MullenLowe",
+   "video": null,
+   "photos": [
+    {
+     "src": "work/campaigns/OMV/omv-01.webp",
+     "label": "OMV · 01"
+    },
+    {
+     "src": "work/campaigns/OMV/omv-02.webp",
+     "label": "OMV · 02"
+    }
+   ]
+  },
+  "lotterien": {
+   "name": "ÖSTERREICHISCHE LOTTERIEN",
+   "tag": "GGK MullenLowe",
+   "video": null,
+   "photos": [
+    {
+     "src": "work/campaigns/Österreichische Lotterien/lotterien-01.webp",
+     "label": "Lotterien · 01"
+    }
+   ]
+  },
+  "securikett": {
+   "name": "SECURIKETT",
+   "tag": "GGK MullenLowe",
+   "video": null,
+   "photos": [
+    {
+     "src": "work/campaigns/Securikett/securikett-01.webp",
+     "label": "Shanghai Tobacco"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-02.webp",
+     "label": "Securikett · 02"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-03.webp",
+     "label": "Securikett · 03"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-04.webp",
+     "label": "Securikett · 04"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-05.webp",
+     "label": "Securikett · 05"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-06.webp",
+     "label": "Securikett · 06"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-07.webp",
+     "label": "Securikett · 07"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-08.webp",
+     "label": "Securikett · 08"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-09.webp",
+     "label": "Securikett · 09"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-10.webp",
+     "label": "Securikett · 10"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-11.webp",
+     "label": "Securikett · 11"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-12.webp",
+     "label": "Securikett · 12"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-13.webp",
+     "label": "Securikett · 13"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-14.webp",
+     "label": "Securikett · 14"
+    },
+    {
+     "src": "work/campaigns/Securikett/securikett-15.webp",
+     "label": "Securikett · 15"
+    }
+   ]
+  },
+  "otherworks": {
+   "name": "OTHER WORKS",
+   "tag": "Branding",
+   "video": null,
+   "photos": [
+    {
+     "src": "work/branding/Other works/other-visitcard-01.webp",
+     "label": "Visit Card"
+    },
+    {
+     "src": "work/branding/Other works/other-visitcard-close.webp",
+     "label": "Visit Card · Detail"
+    },
+    {
+     "src": "work/branding/Other works/other-bianca.webp",
+     "label": "Bianca"
+    },
+    {
+     "src": "work/branding/Other works/other-bodegas-tamaral.webp",
+     "label": "Bodegas Tamaral"
+    },
+    {
+     "src": "work/branding/Other works/other-vizar-vino.webp",
+     "label": "Vizar Vino"
+    },
+    {
+     "src": "work/branding/Other works/other-consulting.webp",
+     "label": "Consulting"
+    },
+    {
+     "src": "work/branding/Other works/other-lebenshilfe-01.webp",
+     "label": "Lebenshilfe · 01"
+    },
+    {
+     "src": "work/branding/Other works/other-lebenshilfe-02.webp",
+     "label": "Lebenshilfe · 02"
+    },
+    {
+     "src": "work/branding/Other works/other-lebenshilfe-03.webp",
+     "label": "Lebenshilfe · 03"
+    },
+    {
+     "src": "work/branding/Other works/other-lebenshilfe-04.webp",
+     "label": "Lebenshilfe · 04"
+    }
+   ]
+  }
+ },
+ "campCards": [
+  {
+   "cat": "branding",
+   "id": "botanical",
+   "cover": "work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "ros",
+   "cover": "work/campaigns/ROS-retail-outlet/1.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "puntigamer",
+   "cover": "work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "and",
+   "cover": "work/campaigns/A.N.D. Beauty/and-beauty-cover.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "freyville",
+   "cover": "work/campaigns/FREYVILLE/freyville-final-helena.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "securikett",
+   "cover": "work/campaigns/Securikett/securikett-01.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "omv",
+   "cover": "work/campaigns/OMV/omv-01.webp"
+  },
+  {
+   "cat": "campaign",
+   "id": "lotterien",
+   "cover": "work/campaigns/Österreichische Lotterien/lotterien-01.webp"
+  },
+  {
+   "cat": "branding",
+   "id": "otherworks",
+   "cover": "work/branding/Other works/other-lebenshilfe-03.webp"
+  }
+ ],
+ "experiments": [
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354837/froncouncil_izofnm.mp4",
+   "title": "The Council of Frogs"
+  },
+  {
+   "type": "image",
+   "src": "work/graphic-design/fragile-self.webp",
+   "title": "Fragile Self"
+  },
+  {
+   "type": "image",
+   "src": "work/graphic-design/worship.webp",
+   "title": "Worship"
+  },
+  {
+   "type": "image",
+   "src": "work/graphic-design/preludio.webp",
+   "title": "Preludio"
+  },
+  {
+   "type": "image",
+   "src": "work/graphic-design/losing-hope.webp",
+   "title": "Losing Hope"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354270/HappyLand_-_1987_g6zgsq.mp4",
+   "title": "HappyLand · 1987"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354278/0000-0300_w5zjqz.mp4",
+   "title": "Loop"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354265/TheWindow_ai2ljc.mp4",
+   "title": "The Window"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354247/Beacon_Of_Life_uyp1em.mp4",
+   "title": "Beacon of Life"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354230/PROMO0001-0250_yb0f1x.mp4",
+   "title": "Promo"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774354219/third_eye_nmkfln.mp4",
+   "title": "Third Eye"
+  },
+  {
+   "type": "video",
+   "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/v1774353643/0001-0250final_yr37um.mp4",
+   "title": "Final"
+  }
+ ],
+ "world": {
+  "text": "Independent creative work exploring World, the on-chain prediction market. The identity, product and positioning are theirs; my work builds on that foundation through a series of key visuals, films and social concepts created for X. The creative approach was to translate an almost unbounded product idea into something calm, precise and inevitable, designed to stand apart in a feed built for noise. Selected work was reposted by @world_xyz, with some pieces further developed following direct creative feedback from the team.",
+  "titles": [
+   "The bottleneck moves from permission to proof."
+  ],
+  "videos": [
+   {
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787596243/world-mono-film_vcropw.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_13,w_1280,f_jpg,q_auto/v1787596243/world-mono-film_vcropw.jpg"
+   },
+   {
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787576281/TradeRealWorld2_hcount.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_6,w_1280,f_jpg,q_auto/v1787576281/TradeRealWorld2_hcount.jpg"
+   },
+   {
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787576281/TradeRealWorld2_hcount.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_1280,f_jpg,q_auto/v1787576281/TradeRealWorld2_hcount.jpg"
+   },
+   {
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580832/0818-happiness-subtitled_utfr8b.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_3,w_1280,f_jpg,q_auto/v1787580832/0818-happiness-subtitled_utfr8b.jpg"
+   },
+   {
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580397/Prophecy-world-SUBS_tejteb.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_9,w_1280,f_jpg,q_auto/v1787580397/Prophecy-world-SUBS_tejteb.jpg"
+   },
+   {
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580537/Back_to_world_i4vqdb.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_12,w_1280,f_jpg,q_auto/v1787580537/Back_to_world_i4vqdb.jpg"
+   }
+  ],
+  "images": [
+   "https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575843/1_q2dtzy.jpg",
+   "https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575843/2_oyijbd.jpg",
+   "https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575845/3_b5xyvm.jpg",
+   "https://res.cloudinary.com/dsaf6aolb/image/upload/f_auto,q_auto,w_900/v1787575845/4_emqrtc.jpg"
+  ]
+ },
+ "photos": [
+  "work/photography/Vienna Street Photography 01.webp",
+  "work/photography/Vienna Street Photography 02.webp",
+  "work/photography/Vienna Street Photography 03.webp",
+  "work/photography/Vienna Street Photography 04.webp",
+  "work/photography/Vienna Street Photography 05.webp",
+  "work/photography/Vienna Street Photography 06.webp",
+  "work/photography/Vienna Street Photography 07.webp",
+  "work/photography/Vienna Street Photography 08.webp",
+  "work/photography/Vienna Street Photography 09.webp",
+  "work/photography/Vienna Street Photography 10.webp",
+  "work/photography/Vienna Street Photography 11.webp",
+  "work/photography/Vienna Street Photography 12.webp",
+  "work/photography/Vienna Street Photography 13.webp",
+  "work/photography/Vienna Street Photography 14.webp",
+  "work/photography/Vienna Street Photography 15.webp",
+  "work/photography/Vienna Street Photography 16.webp",
+  "work/photography/Vienna Street Photography 17.webp",
+  "work/photography/Vienna Street Photography 18.webp",
+  "work/photography/Vienna Street Photography 19.webp",
+  "work/photography/The Other Side of the Lens.webp"
+ ]
+}

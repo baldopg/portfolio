@@ -18,3 +18,12 @@ portfolio-baldomero-new3d.html
 # OS
 .DS_Store
 Thumbs.db
+
+# Viena 3D: fotos de referencia (Wikimedia, CC BY-SA) y copias de seguridad de Blender
+vienna-3d/refs/
+*.blend1
+
+# Vídeos y pósters de Motion: pequeños y necesarios para la web 3D
+!work/motion/*.mp4
+!work/motion/*.webm
+!work/motion/*.jpg
