@@ -65,7 +65,7 @@ body.detail-open .skip, body.detail-open .status, body.detail-open .floors { opa
 .d-card[hidden] { display: none; }
 .d-card img, .d-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .d-card img { filter: grayscale(1) brightness(.82); transition: transform .9s var(--ease), filter .5s; }
-.d-card:hover img, .d-card:focus-visible img { transform: scale(1.05); filter: grayscale(0) brightness(1); }
+.d-card:hover img, .d-card:focus-visible img, .d-card:active img { transform: scale(1.05); filter: grayscale(0) brightness(1); }
 .d-card .d-preview { opacity: 0; transition: opacity .4s; }
 .d-card.is-playing .d-preview { opacity: 1; }
 .d-card:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
@@ -127,8 +127,8 @@ body.detail-open .skip, body.detail-open .status, body.detail-open .floors { opa
   border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #0c0c0e;
   cursor: pointer; break-inside: avoid;
 }
-.d-photo img { width: 100%; height: auto; filter: grayscale(1) contrast(1.05); transition: transform .9s var(--ease); }
-.d-photo:hover img { transform: scale(1.03); }
+.d-photo img { width: 100%; height: auto; filter: grayscale(1) contrast(1.05); transition: transform .9s var(--ease), filter .6s var(--ease); }
+.d-photo:hover img, .d-photo:focus-visible img, .d-photo:active img { transform: scale(1.03); filter: grayscale(0) contrast(1); }
 
 /* ------------------------------------------------------------ visor */
 .lightbox {
