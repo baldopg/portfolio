@@ -3,9 +3,9 @@ export const CONTENT = {
  "motion": {
   "num": "01",
   "title": "Motion.",
-  "sub": "Independent experiments",
-  "intro": "Personal motion studies, built frame by frame in After Effects with the sound designed to the same timeline. Press the speaker on any piece to hear it from the start.",
-  "disclaimer": "Independent experiments. Not commissioned by, affiliated with or endorsed by vorauerfriends or fonio. Names and logos belong to their owners.",
+  "sub": "Independent experiments & spec work",
+  "intro": "Personal motion studies and spec work, built frame by frame with the sound designed to the same timeline. Press the speaker on any piece to hear it from the start.",
+  "disclaimer": "Independent experiments and spec work. Not commissioned by, affiliated with or endorsed by the brands shown. Names and logos belong to their owners.",
   "pieces": [
    {
     "title": "vorauerfriends · Hello!",
@@ -22,6 +22,16 @@ export const CONTENT = {
     "src": "/work/motion/vf-hello-3d.mp4",
     "poster": "/work/motion/vf-hello-3d-poster.jpg",
     "ar": 1.7778
+   },
+   {
+    "title": "FREYVILLE · Helena",
+    "meta": "Spec work · Blender · vertical film",
+    "tag": "Spec work",
+    "text": "The Helena film from the FREYVILLE spec campaign, modelled and rendered in Blender as a vertical film.",
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774350362/Helena-Freyville_1_rogzeh.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774350362/Helena-Freyville_1_rogzeh.jpg",
+    "project": "freyville",
+    "ar": 0.7505
    },
    {
     "title": "fonio · Anruf angenommen",

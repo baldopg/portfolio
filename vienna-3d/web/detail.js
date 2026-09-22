@@ -1,7 +1,7 @@
 // Vistas de detalle: cada sección se abre a pantalla completa sobre la ciudad desenfocada.
 // Works con filtros y proyectos, galerías con visor, reproductores con sonido.
-import { CONTENT } from './content.js?v=20260922144106';
-import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922144106';
+import { CONTENT } from './content.js?v=20260922145234';
+import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922145234';
 
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const NAMES = { motion: 'Motion', works: 'Works', built: 'Built', architect: 'The architect of form', vienna: 'Vienna', world: 'World', about: 'About' };
@@ -26,9 +26,10 @@ const RENDER = {
       <p class="mono d-disclaimer">${esc(c.disclaimer)}</p>
       <div class="d-pieces">${c.pieces.map((p) => `
         <figure class="d-piece" style="--ar:${p.ar || 1.7778}">
-          <span class="tag mono">Independent</span>
+          <span class="tag mono">${esc(p.tag || 'Independent')}</span>
           ${videoTag({ ...p, autoplay: true })}
-          <figcaption><strong>${esc(p.title)}</strong><span class="mono">${esc(p.meta)}</span><p>${esc(p.text)}</p></figcaption>
+          <figcaption><strong>${esc(p.title)}</strong><span class="mono">${esc(p.meta)}</span><p>${esc(p.text)}</p>
+            ${p.project ? `<button class="pill d-campaign" type="button" data-open="works" data-project="${esc(p.project)}">View the full campaign <span aria-hidden="true">&#x2197;</span></button>` : ''}</figcaption>
         </figure>`).join('')}</div>`;
   },
 
@@ -51,7 +52,9 @@ const RENDER = {
   },
 
   project(p) {
-    return `<button class="pill d-back" type="button">&larr; All works</button>
+    const from = history.state && history.state.from;
+    const back = from ? `Back to ${from[0].toUpperCase()}${from.slice(1)}` : 'All works';
+    return `<button class="pill d-back" type="button">&larr; ${esc(back)}</button>
       <header class="d-head">
         <p class="mono d-num">&gt; 02 / WORKS / ${esc(p.cat.toUpperCase())}</p>
         <h2 class="d-title" id="detail-title">${esc(p.title)}</h2>
@@ -236,6 +239,15 @@ export function initDetail({ onOpen, onClose }) {
 
   function open(key, trigger, projectId) {
     if (!RENDER[key]) return;
+    // desde otra sección abierta (p. ej. Motion) se entra directo al proyecto y "atrás" vuelve a esa sección
+    const pi = key === 'works' && projectId && current && current !== 'works'
+      ? CONTENT.works.projects.findIndex((p) => p.id === projectId) : -1;
+    if (pi >= 0) {
+      history.pushState({ vd: 'works', p: pi, lb: false, lv: level() + 1, from: current }, '', `#works/${idOf(pi)}`);
+      showDetail('works', trigger);
+      render('works', pi);
+      return;
+    }
     if (current === key && viewProject == null) return;
     history.pushState({ vd: key, p: null, lb: false, lv: level() + 1 }, '', `#${key}`);
     showDetail(key, trigger);
@@ -329,7 +341,7 @@ export function initDetail({ onOpen, onClose }) {
   });
   document.addEventListener('click', (e) => {
     const t = e.target.closest('[data-open]');
-    if (t) { e.preventDefault(); open(t.dataset.open, t); }
+    if (t) { e.preventDefault(); open(t.dataset.open, t, t.dataset.project); }
   });
   document.addEventListener('keydown', (e) => {
     const t = e.target.closest?.('[data-open][role="button"]');

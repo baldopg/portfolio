@@ -218,14 +218,19 @@ body.at-start .skip, body.detail-open .scroll-cue, body:not(.at-start) .scroll-c
 .hero-actions .pill--solid:hover { color: var(--ink); }
 
 /* motion */
-.reels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+/* Motion: dos 16:9 arriba, fonio panorámico debajo y FREYVILLE vertical en la tercera columna, en las dos filas;
+   con esa colocación su hueco sale a ~3:4, la proporción del vídeo, así que no se recorta */
+.reels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; }
 .reel { margin: 0; position: relative; }
 .tag { position: absolute; z-index: 2; top: .45rem; left: .45rem; padding: .18rem .45rem; border-radius: 999px; font-size: .5rem; background: rgba(5,5,6,.72); border: 1px solid rgba(255,255,255,.22); color: var(--ink); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .disclaimer { color: var(--dim); margin: .9rem 0 0; font-size: .56rem; }
-.reel--wide { grid-column: 1 / -1; }
+.reel--wide { grid-column: 1 / span 2; grid-row: 2; }
+.reel--tall { grid-column: 3; grid-row: 1 / span 2; display: flex; flex-direction: column; }
+.reel--tall .vwrap { flex: 1; min-height: 0; }
+.reels .reel--tall video { height: 100%; aspect-ratio: auto; object-fit: contain; background: #0c0c0e; }
 .reel video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); background: #111; }
 .reel--wide video { aspect-ratio: 1400 / 540; object-fit: contain; background: #f6f6f6; }
-.reel figcaption { margin-top: .35rem; color: var(--dim); }
+.reel figcaption { margin-top: .35rem; color: var(--dim); font-size: .54rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* controles de vídeo: play / pausa, progreso, sonido */
 .vwrap { position: relative; }
@@ -314,11 +319,16 @@ body.at-start .skip, body.detail-open .scroll-cue, body:not(.at-start) .scroll-c
   .counter { margin-top: .9rem; }
   .strip { grid-template-columns: repeat(6, 1fr); }
   .grid a { aspect-ratio: 1 / 1; }
-  .reels { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .reels { grid-template-columns: minmax(0, 1.7778fr) minmax(0, 1.7778fr) minmax(0, .7505fr) minmax(0, 2.5926fr); gap: .4rem; }
+  .reel--wide, .reel--tall { grid-column: auto; grid-row: auto; }
+  .reel--tall .vwrap { flex: none; }
+  .reels .reel video, .reels .reel--wide video, .reels .reel--tall video { height: auto; aspect-ratio: var(--ar, 16 / 9); }
   .reels .vbar { display: none; }
-  .reels .vctl { justify-content: space-between; }
-  .reel--wide { grid-column: auto; }
-  .reel--wide video { aspect-ratio: 16 / 9; }
+  .reels .vctl { justify-content: space-between; left: .2rem; right: .2rem; bottom: .2rem; padding: .08rem; gap: .08rem; }
+  .reels .vbtn { width: 1.15rem; height: 1.15rem; padding: .18rem; }
+  .reel--tall .tag { display: none; }
+  .reels .tag { top: .22rem; left: .22rem; padding: .06rem .28rem; font-size: .38rem; }
+  .reels figcaption { font-size: .46rem; }
   .reel figcaption { margin-top: .2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .pill--open, button.pill.pill--open { margin-top: .7rem; }
   .disclaimer { margin-top: .6rem; }
@@ -347,13 +357,11 @@ body.at-start .skip, body.detail-open .scroll-cue, body:not(.at-start) .scroll-c
   .body { font-size: .8rem; line-height: 1.5; margin-bottom: .7rem; }
   .reels { gap: .4rem; }
   .reel figcaption { font-size: .5rem; }
-  .reel--wide video { aspect-ratio: 1400 / 380; }
   .disclaimer { margin-top: .55rem; }
   .counter { margin-top: .7rem; }
   .builds li { padding: .38rem 0; }
   .builds b { font-size: .8rem; }
   .grid { grid-template-columns: repeat(4, 1fr); }
-  .reels { grid-template-columns: 1fr 1fr; }
   .status { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .skip svg { animation: none; } }

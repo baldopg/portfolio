@@ -81,11 +81,10 @@ def with_ar(pieces):
 
 content = {
     "motion": {
-        "num": "01", "title": "Motion.", "sub": "Independent experiments",
-        "intro": "Personal motion studies, built frame by frame in After Effects with the sound designed to the same timeline. "
+        "num": "01", "title": "Motion.", "sub": "Independent experiments & spec work",
+        "intro": "Personal motion studies and spec work, built frame by frame with the sound designed to the same timeline. "
                  "Press the speaker on any piece to hear it from the start.",
-        "disclaimer": "Independent experiments. Not commissioned by, affiliated with or endorsed by vorauerfriends or fonio. "
-                      "Names and logos belong to their owners.",
+        "disclaimer": "Independent experiments and spec work. Not commissioned by, affiliated with or endorsed by the brands shown. Names and logos belong to their owners.",
         "pieces": with_ar([
             {"title": "vorauerfriends · Hello!", "meta": "Independent study · After Effects · 11 s · sound design",
              "text": "The letters of a hello turn into a waving hand, then into the VF logo, a wink and a signature. Every stroke is rounded.",
@@ -93,6 +92,10 @@ content = {
             {"title": "vorauerfriends · Hello! in 3D", "meta": "Independent study · After Effects Cinema 4D renderer · 11 s",
              "text": "The same choreography rebuilt in 3D: flat colour without lights, real extrusion and a real 3D camera.",
              "src": P + "work/motion/vf-hello-3d.mp4", "poster": P + "work/motion/vf-hello-3d-poster.jpg"},
+            {"title": "FREYVILLE · Helena", "meta": "Spec work · Blender · vertical film", "tag": "Spec work",
+             "text": "The Helena film from the FREYVILLE spec campaign, modelled and rendered in Blender as a vertical film.",
+             "src": cld(d["campaigns"]["freyville"]["video"], "q_auto:good,f_auto,w_1600"),
+             "poster": cld_poster(d["campaigns"]["freyville"]["video"], 1), "project": "freyville"},
             {"title": "fonio · Anruf angenommen", "meta": "Independent study · After Effects · 4.5 s · alpha video",
              "text": "A logo animation for an AI phone assistant: the call is picked up by a classic handset with slots.",
              "src": P + "work/motion/fonio-logo.mp4", "srcWebm": P + "work/motion/fonio-logo.webm",

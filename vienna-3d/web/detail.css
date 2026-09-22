@@ -93,6 +93,7 @@ body.detail-open .skip, body.detail-open .status, body.detail-open .floors { opa
 .d-piece figcaption .mono { color: var(--dim); }
 .d-piece figcaption p { grid-column: 1 / -1; margin: 0; font-size: .92rem; line-height: 1.6; color: rgba(242, 241, 238, .86); max-width: 46rem; }
 .d-piece .vwrap .tag { top: .6rem; left: .6rem; }
+.d-campaign { grid-column: 1 / -1; justify-self: start; margin-top: .4rem; }
 .d-films { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.4rem; }
 .d-films figcaption { grid-template-columns: 1fr; }
 .d-film { margin: 0 0 1.4rem; }
