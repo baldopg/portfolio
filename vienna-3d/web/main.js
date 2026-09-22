@@ -17,8 +17,8 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { FXAAShader } from 'three/addons/shaders/FXAAShader.js';
 import Lenis from 'lenis';
-import { setupVideo, ensureLoaded } from './video.js?v=20260922143227';
-import { initDetail } from './detail.js?v=20260922143227';
+import { setupVideo, ensureLoaded } from './video.js?v=20260922143844';
+import { initDetail } from './detail.js?v=20260922143844';
 
 // ------------------------------------------------------------------ constantes
 const SEG = 1.5;          // alturas de ventana de scroll entre dos paradas

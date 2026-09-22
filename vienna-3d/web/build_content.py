@@ -8,6 +8,15 @@ d = json.loads((HERE / "content_extract.json").read_text(encoding="utf-8"))
 P = "/"   # la web es la portada del sitio; rutas desde la raíz
 
 
+SIZES = json.loads((HERE / "video_sizes.json").read_text(encoding="utf-8")) if (HERE / "video_sizes.json").exists() else {}
+
+
+def ar(url):
+    """Proporción ancho / alto medida con probe_videos.py (None si no se conoce)."""
+    wh = SIZES.get(url)
+    return round(wh[0] / wh[1], 4) if wh else None
+
+
 def thumb(rel):
     """Miniatura de 640 px generada por make_thumbs.py (ruta relativa a la web)."""
     return "/vienna-3d/web/thumbs/" + rel.rsplit(".", 1)[0] + ".webp"
@@ -28,7 +37,7 @@ for e in d["experiments"]:
         experiments.append({"type": "video", "title": e["title"], "cat": "3D & Experiments",
                             "src": cld(e["src"], "q_auto:good,f_auto,w_1600"),
                             "preview": cld(e["src"], "q_auto:eco,f_auto,w_640"),
-                            "poster": cld_poster(e["src"])})
+                            "poster": cld_poster(e["src"]), "ar": ar(cld(e["src"], "q_auto:good,f_auto,w_1600"))})
     else:
         experiments.append({"type": "image", "title": e["title"], "cat": "3D & Experiments", "src": P + e["src"], "thumb": thumb(e["src"])})
 
@@ -41,6 +50,7 @@ for card in d["campCards"]:
         "cover": P + card["cover"], "coverThumb": thumb(card["cover"]),
         "video": cld(c["video"], "q_auto:good,f_auto,w_1600") if c.get("video") else None,
         "videoPoster": cld_poster(c["video"], 1) if c.get("video") else None,
+        "videoAr": ar(cld(c["video"], "q_auto:good,f_auto,w_1600")) if c.get("video") else None,
         "photos": [{"src": P + ph["src"], "thumb": thumb(ph["src"]), "label": ph["label"]} for ph in c["photos"]],
     })
 # nombres con mayúsculas propias
@@ -57,9 +67,17 @@ world_films = [
     {"title": "Prophecy", "meta": "0:40 · Every civilisation kept the same record. All of them named one date.", "src": w[4]["src"], "poster": w[4]["poster"]},
     {"title": "Back to World", "meta": "0:57 · The long way round, and the return.", "src": w[5]["src"], "poster": w[5]["poster"]},
 ]
+for f in world_films:
+    f["ar"] = ar(f["src"])
 world_visuals = [{"src": u, "label": l} for u, l in zip(d["world"]["images"], [
     "01 · Key visual · Call it and find out", "02 · Key visual · Predict", "03 · 3D render · What is World",
     "04 · Key visual · Open to resolve"])]
+
+def with_ar(pieces):
+    for p in pieces:
+        p["ar"] = ar(p["src"])
+    return pieces
+
 
 content = {
     "motion": {
@@ -68,7 +86,7 @@ content = {
                  "Press the speaker on any piece to hear it from the start.",
         "disclaimer": "Independent experiments. Not commissioned by, affiliated with or endorsed by vorauerfriends or fonio. "
                       "Names and logos belong to their owners.",
-        "pieces": [
+        "pieces": with_ar([
             {"title": "vorauerfriends · Hello!", "meta": "Independent study · After Effects · 11 s · sound design",
              "text": "The letters of a hello turn into a waving hand, then into the VF logo, a wink and a signature. Every stroke is rounded.",
              "src": P + "work/motion/vf-hello.mp4", "poster": P + "work/motion/vf-hello-poster.jpg"},
@@ -79,7 +97,7 @@ content = {
              "text": "A logo animation for an AI phone assistant: the call is picked up by a classic handset with slots.",
              "src": P + "work/motion/fonio-logo.mp4", "srcWebm": P + "work/motion/fonio-logo.webm",
              "poster": P + "work/motion/fonio-logo-poster.webp", "light": True},
-        ],
+        ]),
     },
     "works": {
         "num": "02", "title": "Selected works.", "sub": "3D & Experiments · Branding · Campaigns",

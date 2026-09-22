@@ -12,14 +12,16 @@ export const CONTENT = {
     "meta": "Independent study · After Effects · 11 s · sound design",
     "text": "The letters of a hello turn into a waving hand, then into the VF logo, a wink and a signature. Every stroke is rounded.",
     "src": "/work/motion/vf-hello.mp4",
-    "poster": "/work/motion/vf-hello-poster.jpg"
+    "poster": "/work/motion/vf-hello-poster.jpg",
+    "ar": 1.7778
    },
    {
     "title": "vorauerfriends · Hello! in 3D",
     "meta": "Independent study · After Effects Cinema 4D renderer · 11 s",
     "text": "The same choreography rebuilt in 3D: flat colour without lights, real extrusion and a real 3D camera.",
     "src": "/work/motion/vf-hello-3d.mp4",
-    "poster": "/work/motion/vf-hello-3d-poster.jpg"
+    "poster": "/work/motion/vf-hello-3d-poster.jpg",
+    "ar": 1.7778
    },
    {
     "title": "fonio · Anruf angenommen",
@@ -28,7 +30,8 @@ export const CONTENT = {
     "src": "/work/motion/fonio-logo.mp4",
     "srcWebm": "/work/motion/fonio-logo.webm",
     "poster": "/work/motion/fonio-logo-poster.webp",
-    "light": true
+    "light": true,
+    "ar": 2.5926
    }
   ]
  },
@@ -44,7 +47,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354837/froncouncil_izofnm.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354837/froncouncil_izofnm.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354837/froncouncil_izofnm.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354837/froncouncil_izofnm.jpg",
+    "ar": 0.7143
    },
    {
     "type": "image",
@@ -80,7 +84,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354270/HappyLand_-_1987_g6zgsq.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354270/HappyLand_-_1987_g6zgsq.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354270/HappyLand_-_1987_g6zgsq.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354270/HappyLand_-_1987_g6zgsq.jpg",
+    "ar": 0.7505
    },
    {
     "type": "video",
@@ -88,7 +93,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354278/0000-0300_w5zjqz.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354278/0000-0300_w5zjqz.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354278/0000-0300_w5zjqz.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354278/0000-0300_w5zjqz.jpg",
+    "ar": 0.7505
    },
    {
     "type": "video",
@@ -96,7 +102,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354265/TheWindow_ai2ljc.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354265/TheWindow_ai2ljc.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354265/TheWindow_ai2ljc.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354265/TheWindow_ai2ljc.jpg",
+    "ar": 0.7143
    },
    {
     "type": "video",
@@ -104,7 +111,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354247/Beacon_Of_Life_uyp1em.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354247/Beacon_Of_Life_uyp1em.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354247/Beacon_Of_Life_uyp1em.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354247/Beacon_Of_Life_uyp1em.jpg",
+    "ar": 0.7143
    },
    {
     "type": "video",
@@ -112,7 +120,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354230/PROMO0001-0250_yb0f1x.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354230/PROMO0001-0250_yb0f1x.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354230/PROMO0001-0250_yb0f1x.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354230/PROMO0001-0250_yb0f1x.jpg",
+    "ar": 0.7143
    },
    {
     "type": "video",
@@ -120,7 +129,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774354219/third_eye_nmkfln.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774354219/third_eye_nmkfln.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354219/third_eye_nmkfln.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774354219/third_eye_nmkfln.jpg",
+    "ar": 0.7505
    },
    {
     "type": "video",
@@ -128,7 +138,8 @@ export const CONTENT = {
     "cat": "3D & Experiments",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774353643/0001-0250final_yr37um.mp4",
     "preview": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:eco,f_auto,w_640/v1774353643/0001-0250final_yr37um.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774353643/0001-0250final_yr37um.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_720,f_jpg,q_auto/v1774353643/0001-0250final_yr37um.jpg",
+    "ar": 0.8
    }
   ],
   "projects": [
@@ -141,6 +152,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
     "video": null,
     "videoPoster": null,
+    "videoAr": null,
     "photos": [
      {
       "src": "/work/branding/Botanical Tonic Water/botanical-tonic-water-01.webp",
@@ -168,6 +180,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/ROS-retail-outlet/1.webp",
     "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774345847/ROS-1080p_ijsalf.mp4",
     "videoPoster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774345847/ROS-1080p_ijsalf.jpg",
+    "videoAr": 1.7778,
     "photos": [
      {
       "src": "/work/campaigns/ROS-retail-outlet/1.webp",
@@ -205,6 +218,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/Puntigamer/puntigamer-zwickl-keyvisual.webp",
     "video": null,
     "videoPoster": null,
+    "videoAr": null,
     "photos": [
      {
       "src": "/work/campaigns/Puntigamer/puntigamer-prost-01.webp",
@@ -242,6 +256,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
     "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774349282/Beauty2k_jbp7kn.mp4",
     "videoPoster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774349282/Beauty2k_jbp7kn.jpg",
+    "videoAr": 1.7778,
     "photos": [
      {
       "src": "/work/campaigns/A.N.D. Beauty/and-beauty-cover.webp",
@@ -274,6 +289,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/FREYVILLE/freyville-final-helena.webp",
     "video": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1774350362/Helena-Freyville_1_rogzeh.mp4",
     "videoPoster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_1,w_720,f_jpg,q_auto/v1774350362/Helena-Freyville_1_rogzeh.jpg",
+    "videoAr": 0.7505,
     "photos": [
      {
       "src": "/work/campaigns/FREYVILLE/freyville-final-helena.webp",
@@ -306,6 +322,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/Securikett/securikett-01.webp",
     "video": null,
     "videoPoster": null,
+    "videoAr": null,
     "photos": [
      {
       "src": "/work/campaigns/Securikett/securikett-01.webp",
@@ -393,6 +410,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/OMV/omv-01.webp",
     "video": null,
     "videoPoster": null,
+    "videoAr": null,
     "photos": [
      {
       "src": "/work/campaigns/OMV/omv-01.webp",
@@ -415,6 +433,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
     "video": null,
     "videoPoster": null,
+    "videoAr": null,
     "photos": [
      {
       "src": "/work/campaigns/Österreichische Lotterien/lotterien-01.webp",
@@ -432,6 +451,7 @@ export const CONTENT = {
     "coverThumb": "/vienna-3d/web/thumbs/work/branding/Other works/other-lebenshilfe-03.webp",
     "video": null,
     "videoPoster": null,
+    "videoAr": null,
     "photos": [
      {
       "src": "/work/branding/Other works/other-visitcard-01.webp",
@@ -724,31 +744,36 @@ export const CONTENT = {
     "title": "9.9.26, the countdown film",
     "meta": "Reposted by @world_xyz",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787596243/world-mono-film_vcropw.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_13,w_1280,f_jpg,q_auto/v1787596243/world-mono-film_vcropw.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_13,w_1280,f_jpg,q_auto/v1787596243/world-mono-film_vcropw.jpg",
+    "ar": 1.7778
    },
    {
     "title": "Trade Everything, the launch film",
     "meta": "Reposted by @world_xyz",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787576281/TradeRealWorld2_hcount.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_6,w_1280,f_jpg,q_auto/v1787576281/TradeRealWorld2_hcount.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_6,w_1280,f_jpg,q_auto/v1787576281/TradeRealWorld2_hcount.jpg",
+    "ar": 1.7778
    },
    {
     "title": "Happiness",
     "meta": "0:31 · A trading-floor life traded in for something else.",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580832/0818-happiness-subtitled_utfr8b.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_3,w_1280,f_jpg,q_auto/v1787580832/0818-happiness-subtitled_utfr8b.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_3,w_1280,f_jpg,q_auto/v1787580832/0818-happiness-subtitled_utfr8b.jpg",
+    "ar": 1.7778
    },
    {
     "title": "Prophecy",
     "meta": "0:40 · Every civilisation kept the same record. All of them named one date.",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580397/Prophecy-world-SUBS_tejteb.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_9,w_1280,f_jpg,q_auto/v1787580397/Prophecy-world-SUBS_tejteb.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_9,w_1280,f_jpg,q_auto/v1787580397/Prophecy-world-SUBS_tejteb.jpg",
+    "ar": 1.7778
    },
    {
     "title": "Back to World",
     "meta": "0:57 · The long way round, and the return.",
     "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1280/v1787580537/Back_to_world_i4vqdb.mp4",
-    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_12,w_1280,f_jpg,q_auto/v1787580537/Back_to_world_i4vqdb.jpg"
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_12,w_1280,f_jpg,q_auto/v1787580537/Back_to_world_i4vqdb.jpg",
+    "ar": 1.7778
    }
   ],
   "visuals": [

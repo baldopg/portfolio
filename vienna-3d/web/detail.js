@@ -1,7 +1,7 @@
 // Vistas de detalle: cada sección se abre a pantalla completa sobre la ciudad desenfocada.
 // Works con filtros y proyectos, galerías con visor, reproductores con sonido.
-import { CONTENT } from './content.js?v=20260922143227';
-import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922143227';
+import { CONTENT } from './content.js?v=20260922143844';
+import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922143844';
 
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const NAMES = { motion: 'Motion', works: 'Works', built: 'Built', architect: 'The architect of form', vienna: 'Vienna', world: 'World', about: 'About' };
@@ -25,7 +25,7 @@ const RENDER = {
     return head(c, 'motion') + `
       <p class="mono d-disclaimer">${esc(c.disclaimer)}</p>
       <div class="d-pieces">${c.pieces.map((p) => `
-        <figure class="d-piece">
+        <figure class="d-piece" style="--ar:${p.ar || 1.7778}">
           <span class="tag mono">Independent</span>
           ${videoTag({ ...p, autoplay: true })}
           <figcaption><strong>${esc(p.title)}</strong><span class="mono">${esc(p.meta)}</span><p>${esc(p.text)}</p></figcaption>
@@ -57,7 +57,7 @@ const RENDER = {
         <h2 class="d-title" id="detail-title">${esc(p.title)}</h2>
         <p class="mono d-sub">${esc(p.tag)} · ${p.photos.length} images${p.video ? ' · film' : ''}</p>
       </header>
-      ${p.video ? `<figure class="d-film">${videoTag({ src: p.video, poster: p.videoPoster, autoplay: true })}</figure>` : ''}
+      ${p.video ? `<figure class="d-film" style="--ar:${p.videoAr || 1.7778}">${videoTag({ src: p.video, poster: p.videoPoster, autoplay: true })}</figure>` : ''}
       <div class="d-grid d-grid--photos">${p.photos.map((ph, i) => `
         <button class="d-card" type="button" data-photo="${i}" aria-label="${esc(ph.label)}">
           <img loading="lazy" src="${esc(ph.thumb || ph.src)}" alt=""><span class="d-cap"><b>${esc(ph.label)}</b></span>
@@ -90,7 +90,7 @@ const RENDER = {
     return head(c, 'world') + `
       <h3 class="mono d-h3">&gt; The films</h3>
       <div class="d-films">${c.films.map((f) => `
-        <figure class="d-piece">${videoTag({ src: f.src, poster: f.poster })}
+        <figure class="d-piece" style="--ar:${f.ar || 1.7778}">${videoTag({ src: f.src, poster: f.poster })}
           <figcaption><strong>${esc(f.title)}</strong><span class="mono">${esc(f.meta)}</span></figcaption></figure>`).join('')}</div>
       <h3 class="mono d-h3">&gt; Key visuals</h3>
       <div class="d-grid d-grid--wide">${c.visuals.map((v, i) => `
@@ -184,7 +184,7 @@ export function initDetail({ onOpen, onClose }) {
         cards.forEach((card) => { card.hidden = !(f === 'All' || card.dataset.cat === f); });
       }));
       const expItems = c.experiments.map((e) => e.type === 'video'
-        ? { type: 'video', src: e.src, poster: e.poster, label: `${e.cat} · ${e.title}` }
+        ? { type: 'video', src: e.src, poster: e.poster, ar: e.ar, label: `${e.cat} · ${e.title}` }
         : { type: 'image', src: e.src, label: `${e.cat} · ${e.title}` });
       cards.forEach((card) => card.addEventListener('click', () => {
         const i = +card.dataset.i;
@@ -274,7 +274,7 @@ export function initDetail({ onOpen, onClose }) {
     const it = lbItems[lbIndex];
     lbMedia.querySelectorAll('video').forEach((v) => v.pause());
     if (it.type === 'video') {
-      lbMedia.innerHTML = `<figure class="lb-video">${videoTag({ src: it.src, poster: it.poster })}</figure>`;
+      lbMedia.innerHTML = `<figure class="lb-video" style="--ar:${it.ar || 1.7778}">${videoTag({ src: it.src, poster: it.poster })}</figure>`;
       const v = lbMedia.querySelector('video');
       setupVideo(v);
       ensureLoaded(v);

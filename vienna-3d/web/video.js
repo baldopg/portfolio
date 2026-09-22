@@ -61,6 +61,11 @@ export function setupVideo(v) {
   v.addEventListener('pause', sync);
   v.addEventListener('volumechange', sync);
   v.addEventListener('timeupdate', progress);
+  // la forma del reproductor sigue al vídeo real (vertical, 16:9, panorámico), sin recortar
+  v.addEventListener('loadedmetadata', () => {
+    const fig = v.closest('.d-piece, .d-film, .lb-video');
+    if (fig && v.videoWidth && v.videoHeight) fig.style.setProperty('--ar', (v.videoWidth / v.videoHeight).toFixed(4));
+  });
   v.addEventListener('click', togglePlay);
   btnPlay.addEventListener('click', togglePlay);
   btnSound.addEventListener('click', () => {
