@@ -1,7 +1,7 @@
 // Vistas de detalle: cada sección se abre a pantalla completa sobre la ciudad desenfocada.
 // Works con filtros y proyectos, galerías con visor, reproductores con sonido.
-import { CONTENT } from './content.js?v=20260922145234';
-import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260922145234';
+import { CONTENT } from './content.js?v=20260926091915';
+import { setupVideo, ensureLoaded, muteOthers } from './video.js?v=20260926091915';
 
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const NAMES = { motion: 'Motion', works: 'Works', built: 'Built', architect: 'The architect of form', vienna: 'Vienna', world: 'World', about: 'About' };

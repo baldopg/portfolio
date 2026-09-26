@@ -231,6 +231,16 @@ body.at-start .skip, body.detail-open .scroll-cue, body:not(.at-start) .scroll-c
 .reel video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); background: #111; }
 .reel--wide video { aspect-ratio: 1400 / 540; object-fit: contain; background: #f6f6f6; }
 .reel figcaption { margin-top: .35rem; color: var(--dim); font-size: .54rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* fünf Stücke: die Motion-Karte ist breiter; der Web-Film groß über zwei Spalten, darunter zwei 16:9,
+   rechts FREYVILLE (vertikal) über fonio (panoramisch). Die Höhen der beiden Seiten gehen fast genau auf */
+@media (min-width: 821px) { #motion { width: min(60rem, 58vw, calc(135vh - 30rem)); } }   /* so breit wie möglich, ohne dass die Karte in der Höhe scrollt; im Handy volle Breite */
+.reels--five .reel--feature { grid-column: 1 / span 2; grid-row: 1; }
+.reels--five > .reel:nth-child(2) { grid-column: 1; grid-row: 2; }
+.reels--five > .reel:nth-child(3) { grid-column: 2; grid-row: 2; }
+.reel-col { grid-column: 3; grid-row: 1 / span 2; display: flex; flex-direction: column; gap: .6rem; min-height: 0; }
+.reel-col .reel--tall { grid-column: auto; grid-row: auto; flex: 1; min-height: 0; }
+.reel-col .reel--wide { grid-column: auto; grid-row: auto; flex: none; }
+.reel--feature figcaption { font-size: .6rem; }
 
 /* controles de vídeo: play / pausa, progreso, sonido */
 .vwrap { position: relative; }
@@ -321,6 +331,14 @@ body.at-start .skip, body.detail-open .scroll-cue, body:not(.at-start) .scroll-c
   .grid a { aspect-ratio: 1 / 1; }
   .reels { grid-template-columns: minmax(0, 1.7778fr) minmax(0, 1.7778fr) minmax(0, .7505fr) minmax(0, 2.5926fr); gap: .4rem; }
   .reel--wide, .reel--tall { grid-column: auto; grid-row: auto; }
+  /* niedrige Fenster: Web-Film und Bitpanda groß in einer Reihe, darunter vorauerfriends, FREYVILLE und fonio */
+  #motion { width: min(52rem, 62vw, calc(204vh - 52rem)); }
+  .reels--five { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .reels--five .reel--feature { grid-column: 1 / span 3; grid-row: 1; }
+  .reels--five > .reel:nth-child(2) { grid-column: 4 / span 3; grid-row: 1; }
+  .reels--five > .reel:nth-child(3) { grid-column: 1 / span 2; grid-row: 2; }
+  .reels--five .reel-col { grid-column: 3 / span 4; grid-row: 2; display: grid; grid-template-columns: minmax(0, .7505fr) minmax(0, 2.5926fr); gap: .4rem; align-items: start; }
+  .reels--five .reel-col .reel--tall { flex: none; }
   .reel--tall .vwrap { flex: none; }
   .reels .reel video, .reels .reel--wide video, .reels .reel--tall video { height: auto; aspect-ratio: var(--ar, 16 / 9); }
   .reels .vbar { display: none; }

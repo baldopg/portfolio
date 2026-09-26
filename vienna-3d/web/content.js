@@ -8,19 +8,29 @@ export const CONTENT = {
   "disclaimer": "Independent experiments and spec work. Not commissioned by, affiliated with or endorsed by the brands shown. Names and logos belong to their owners.",
   "pieces": [
    {
+    "title": "adidas · Volkswagen · HUGO BOSS · Drei Marken. Ein Studio.",
+    "meta": "Spec work · WebGL scroll site · 45 s",
+    "tag": "Spec work",
+    "text": "A scroll site for three brands in one studio: a sole cracks the screen, the camera passes between the legs to the ID.4 and a man steps out of the exploded car. Concept, layout and code by me, campaign visuals generated with AI. Recorded frame by frame from the site.",
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1790406694/video-addidas_gx7vo6.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_8,w_1280,f_jpg,q_auto/v1790406694/video-addidas_gx7vo6.jpg",
+    "ar": 1.7778
+   },
+   {
+    "title": "Bitpanda · Old Vienna, New Wealth",
+    "meta": "Spec film · AI video, edit, sound and typography · 30 s",
+    "tag": "Spec work",
+    "text": "One circle travels through Vienna, from a sheet of gold leaf in 1908 to the Secession dome, the Prater wheel and a green disc in 2026. Fourteen shots generated on a single GPU, then graded, cut and scored.",
+    "src": "https://res.cloudinary.com/dsaf6aolb/video/upload/q_auto:good,f_auto,w_1600/v1788284968/bitpanda_ldyusd.mp4",
+    "poster": "https://res.cloudinary.com/dsaf6aolb/video/upload/so_2,w_1280,f_jpg,q_auto/v1788284968/bitpanda_ldyusd.jpg",
+    "ar": 1.7486
+   },
+   {
     "title": "vorauerfriends · Hello!",
     "meta": "Independent study · After Effects · 11 s · sound design",
     "text": "The letters of a hello turn into a waving hand, then into the VF logo, a wink and a signature. Every stroke is rounded.",
     "src": "/work/motion/vf-hello.mp4",
     "poster": "/work/motion/vf-hello-poster.jpg",
-    "ar": 1.7778
-   },
-   {
-    "title": "vorauerfriends · Hello! in 3D",
-    "meta": "Independent study · After Effects Cinema 4D renderer · 11 s",
-    "text": "The same choreography rebuilt in 3D: flat colour without lights, real extrusion and a real 3D camera.",
-    "src": "/work/motion/vf-hello-3d.mp4",
-    "poster": "/work/motion/vf-hello-3d-poster.jpg",
     "ar": 1.7778
    },
    {
